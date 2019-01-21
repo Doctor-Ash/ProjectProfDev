@@ -25,11 +25,10 @@ public class Controller {
 		
 		ctx.addServlet("servlets.LoginServlet", "/login");
 		ctx.addServlet("servlets.LogoutServlet", "/logout");
-		ctx.addServlet("servlets.ServletDelete", "/delete");
-		ctx.addServlet("servlets.ServletUpdate", "/update");
+
 		ctx.addServlet("servlets.ServerletHome","/home");
-		ctx.addServlet("servlets.ServletAddNewCar", "/addNew");
-		
+
+
 		//setting the handler and starting the sever
 		server.setHandler(ctx);
 		server.start();
