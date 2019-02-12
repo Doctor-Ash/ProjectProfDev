@@ -12,7 +12,7 @@ public class Controller {
 		Server server = new Server(8005); //sets the sever port it will run on
 		WebAppContext ctx = new WebAppContext();
 		ctx.setResourceBase("webapp"); //sets the directory for the web files
-		ctx.setContextPath("/vehicle");
+		ctx.setContextPath("/profdev");
 
 
 		//config
@@ -23,10 +23,11 @@ public class Controller {
 
 		//mappings
 
-		ctx.addServlet("servlets.LoginServlet", "/login");
-		ctx.addServlet("servlets.LogoutServlet", "/logout");
-
-		ctx.addServlet("servlets.ServerletHome","/home");
+		ctx.addServlet("Servlets.LoginServlet", "/login");
+		ctx.addServlet("Servlets.LogoutServlet", "/logout");
+		ctx.addServlet("Servlets.AddSkillServlet", "/addSkill");
+		
+		ctx.addServlet("Servlets.ServletHome","/home");
 
 		//setting the handler and starting the sever
 		server.setHandler(ctx);
