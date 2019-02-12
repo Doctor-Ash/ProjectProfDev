@@ -29,11 +29,11 @@ public class ServerletHome extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		
-		VehicleDAO dao = new VehicleDAO();
-		ArrayList<Vehicle> AllVehicle = dao.getAllVehicle();
+		StudentDAO dao = new StudentDAO();
+		
 	
 		RequestDispatcher view = req.getRequestDispatcher("index.jsp");
-		req.setAttribute("AllVehicle", AllVehicle);
+		req.setAttribute("",);
 		view.forward(req, resp);
 		//starts the home page 
 	}
