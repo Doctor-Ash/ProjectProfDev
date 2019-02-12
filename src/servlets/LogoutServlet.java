@@ -35,11 +35,11 @@ public class LogoutServlet extends HttpServlet
 	{
 		HttpSession session =req.getSession();
 
-		VehicleDAO dao = new VehicleDAO();
-		ArrayList<Vehicle> AllVehicle = dao.getAllVehicle();
+		StudentDAO dao = new StudentDAO();
+	
 		session.setAttribute("session",false);
 		resp.sendRedirect("home");
-		req.setAttribute("AllVehicle", AllVehicle);
+		req.setAttribute("",);
 		//log out just changes the http session to false so admin parts of the website dont show 
 	}
 
