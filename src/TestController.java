@@ -9,11 +9,18 @@ public class TestController {
 		
 		StudentDAO dao = new StudentDAO();
 		
-		Student lewis = new Student("Lewis", "Frater", 23, "lewis@mail.com",
-				"MMU", "Computer Science", "bob123", "apples");
+		//Student lewis = new Student("Lewis", "Frater", 23, "lewis@mail.com",
+			//	"MMU", "Computer Science", "bob123", "apples");
+		
+		/*try {
+			dao.insertStudent(lewis);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
 		
 		try {
-			dao.insertStudent(lewis);
+			dao.deleteStudent(0);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

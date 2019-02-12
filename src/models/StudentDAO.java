@@ -71,7 +71,39 @@ public class StudentDAO {
 		return ok;
 	}
 	
-	
+	public boolean deleteStudent(int stu_id) throws SQLException
+	{
+		System.out.println("Deleting student with id = " + stu_id);
+		Connection dbConnection = null;
+		Statement statement = null;
+		int result = 0;
+		String query = "DELETE FROM student WHERE stu_id = " + stu_id + ";";
+		try {
+			dbConnection= getDBConnection();
+			statement = dbConnection.createStatement();
+			System.out.println(query);
+			
+			result = statement.executeUpdate(query);
+		} finally
+		{
+			if (statement != null) 
+			{
+				statement.close();
+			}
+			if (dbConnection != null) 
+			{
+				dbConnection.close();
+			}
+		}
+		if (result == 1)
+		{
+			return true;
+		} else 
+		{
+			return false;
+		}
+	}
+
 	
 	
 
