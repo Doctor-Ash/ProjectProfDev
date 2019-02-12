@@ -1,4 +1,4 @@
-package servlets;
+package Servlets;
 /**
 * Logout servlet for the web 
 *
@@ -21,8 +21,8 @@ import org.eclipse.jetty.server.Dispatcher;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletHandler;
 
-import models.Vehicle;
-import models.VehicleDAO;
+import models.StudentDAO;
+
 
 import java.io.IOException;
 
@@ -39,7 +39,7 @@ public class LogoutServlet extends HttpServlet
 	
 		session.setAttribute("session",false);
 		resp.sendRedirect("home");
-		req.setAttribute("",);
+		//req.setAttribute("",);
 		//log out just changes the http session to false so admin parts of the website dont show 
 	}
 

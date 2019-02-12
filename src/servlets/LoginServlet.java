@@ -1,4 +1,4 @@
-package servlets;
+package Servlets;
 /**
 * Login servlet to let thte user log in
 *
@@ -21,8 +21,7 @@ import org.eclipse.jetty.server.Dispatcher;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletHandler;
 
-import models.Vehicle;
-import models.VehicleDAO;
+import models.StudentDAO;
 
 import java.io.IOException;
 
@@ -50,7 +49,7 @@ public class LoginServlet extends HttpServlet
 			session.setAttribute("session",true); //once the user has logged in sets the session to true so on pages that require admin only have that
 			resp.sendRedirect("home");	
 		//	RequestDispatcher view = req.getRequestDispatcher("LoggedIn.jsp");
-			req.setAttribute("", );
+		//	req.setAttribute("", );
 		//	view.forward(req, resp);
 			
 		}

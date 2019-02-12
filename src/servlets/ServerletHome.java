@@ -1,4 +1,4 @@
-package servlets;
+package Servlets;
 
 /**
 * servlet to load the home
@@ -18,8 +18,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import models.Vehicle;
-import models.VehicleDAO;
+import models.StudentDAO;
+
 
 
 
@@ -33,7 +33,7 @@ public class ServerletHome extends HttpServlet {
 		
 	
 		RequestDispatcher view = req.getRequestDispatcher("index.jsp");
-		req.setAttribute("",);
+		//req.setAttribute("",);
 		view.forward(req, resp);
 		//starts the home page 
 	}
