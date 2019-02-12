@@ -1,4 +1,5 @@
-<%@page import="models.Vehicle" %>
+<%@page import="models.Student" %>
+<%@page import="models.Skill" %>
 <%@page import="java.util.ArrayList" %>
 
 <!DOCTYPE html>
