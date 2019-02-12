@@ -11,6 +11,8 @@ public class Student {
 	private String email;
 	private String university;
 	private String course;
+	private String username;
+	private String password;
 	
 	private ArrayList<Skill> skills;
 	
