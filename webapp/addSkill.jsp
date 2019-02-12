@@ -16,26 +16,16 @@
 
 
 
-<h1>Insert Vehicle</h1>
+<h1>Insert Skill</h1>
 
 
 
 	<form method = "post">
 	   
-		Make: <input type="text" name="make">
-		Model: <input type="text" name="model">
-		Year: <input type="text" name="year">
-		Price: <input type="text" name="price">
-		License number: <input type="text" name="license_number">
-		Colour: <input type="text" name="colour">
-		Number of doors: <input type="text" name="numberofdoors">
-		Transmission: <input type="text" name="transmission">
-		Mileage: <input type="text" name="mileage">
-		Fuel Type: <input type="text" name="fuelType">
-		Engine Size: <input type="text" name="engineSize">
-		Body Style: <input type="text" name="bodyStyle">
-		Condition: <input type="text" name="condition">
-		Notes: <input type="text" name="notes">
+		Name: <input type="text" name="name">
+		Skill: <input type="text" name="skill">
+		Description: <input type="text" name="description">
+		Rating: <input type="text" name="rating">
 		<input type="submit" value="Submit">
 		
 		<!-- form for add -->
