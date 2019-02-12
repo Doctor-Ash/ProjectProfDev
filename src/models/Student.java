@@ -11,19 +11,46 @@ public class Student {
 	private String email;
 	private String university;
 	private String course;
+
 	private String username;
 	private String password;
 	
 	private ArrayList<Skill> skills;
 	
 	public Student(String first_name, String last_name, int age, String email, String university, 
-			String course) {
+			String course, String username, String password) {
 		this.first_name = first_name;
 		this.last_name = last_name;
 		this.age = age;
 		this.email = email;
 		this.university = university;
 		this.course = course;
+		this.username = username;
+		this.password = password;
+	}
+	
+	public int getStu_id() {
+		return stu_id;
+	}
+
+	public void setStu_id(int stu_id) {
+		this.stu_id = stu_id;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	//add a skill to the list of skills associated with this student
