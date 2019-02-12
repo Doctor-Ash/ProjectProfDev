@@ -47,14 +47,14 @@ public class TestController {
 		*/
 		
 		//###############SKILLS DELETE TEST#################
-		
+		/*
 		try {
 			skillDao.deleteSkill(0);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		*/
 	}
 
 }
