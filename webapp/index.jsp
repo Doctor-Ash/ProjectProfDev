@@ -11,7 +11,19 @@
 	<title>Professional Development Planner</title>
 </head>
 <body>
-<h1>Professional Development Planner</h1>
+	<header>
+                <h1>Professional Development Planner</h1>
+            
+                <!-- Navigation bar within the header  -->
+                <nav>
+                    <ul>
+                        <!-- class: current, to indicate which page user is currently on -->
+                        <li><a href="" >Home</a></li>   
+                        <li><a href="">About</a></li>
+                    </ul>
+                </nav>
+        </header>
+
 	
 
 	<br>
