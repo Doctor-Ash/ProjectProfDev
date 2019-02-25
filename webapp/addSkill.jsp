@@ -9,10 +9,10 @@
 	<meta  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="v" %> >
 	
 	<link rel="stylesheet" href="css/sites.css">
-	<title>Insert Vehicle</title>
+	<title>Insert Skill</title>
 </head>
 <body>
-<v:if test="${session == true }">   <!-- if logged in display the form -->
+  <!-- if logged in display the form -->
 
 
 
@@ -31,7 +31,7 @@
 		<!-- form for add -->
 		
 	</form>
-	</v:if>
+
 	
 
 	

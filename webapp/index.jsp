@@ -30,6 +30,7 @@
 
 
 	<a href="./login"><button>Login</button>  </a>
+	<a href="addSkill.jsp"><button>Add a skill</button></a>
 	
 	<br>
 	
