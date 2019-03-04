@@ -21,6 +21,7 @@ import org.eclipse.jetty.server.Dispatcher;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletHandler;
 
+import models.Student;
 import models.StudentDAO;
 
 import java.io.IOException;
@@ -41,9 +42,11 @@ public class LoginServlet extends HttpServlet
 			String uname = req.getParameter("username");
 			String password = req.getParameter("password");
 			HttpSession session =req.getSession(); //used to check whether user is logged in
+			Student lewis = new Student("Lewis", "Frater", 23, "lewis@mail.com",
+					"MMU", "Computer Science", "bob123", "apples");
 			
 			//password manager
-		if (uname.equals("")&& password.equals(""))
+		if (uname.equals(lewis.getUsername())&& password.equals(lewis.getPassword()))
 		{
 			StudentDAO dao = new StudentDAO();
 			session.setAttribute("session",true); //once the user has logged in sets the session to true so on pages that require admin only have that

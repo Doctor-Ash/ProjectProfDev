@@ -33,8 +33,14 @@
 	
 
 	
-	<!-- login link -->
-		<a href="./login"> Login </a>
+	<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+			<a href="./logout"><button>log out</button> </a>
+			</v:if>
+			
+			<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+			
+			<a href="./login"><button>Log in</button> </a>
+			</v:if>
 
 </body>
 </html>
