@@ -102,6 +102,36 @@ public class SkillDAO {
 	}
 	
 	
-	
+	public Boolean updateSkill(Skill up,int skill_id) throws SQLException {
+		System.out.println(" Updating skill with id = " + skill_id);
+		Connection dbConnection = null;
+		Statement statement = null;
+		int result = 0;
+		String query = "UPDATE skill  = " + skill_id + ";";
+		try {
+			dbConnection= getDBConnection();
+			statement = dbConnection.createStatement();
+			System.out.println(query);
+			
+			result = statement.executeUpdate(query);
+		} finally
+		{
+			if (statement != null) 
+			{
+				statement.close();
+			}
+			if (dbConnection != null) 
+			{
+				dbConnection.close();
+			}
+		}
+		if (result == 1)
+		{
+			return true;
+		} else 
+		{
+			return false;
+		}
+	}
 	
 }
