@@ -105,6 +105,56 @@ public class StudentDAO {
 	}
 
 	
+	public boolean getStudent(String Username, String Password) throws SQLException {
+		Connection dbConnection = null;
+		Statement statement = null;
+		ResultSet resultset = null;
+	
+		String query = "SELECT * FROM student WHERE username =" + Username + " AND password =" + Password +";" ;
+		
+		
+		try {
+				dbConnection = getDBConnection();
+				statement = dbConnection.createStatement();
+				System.out.println(query);
+				// execute SQL query
+				resultset = statement.executeQuery(query);
+				while (resultset.next()) {
+				
+
+				
+				String username = resultset.getString("username");
+				String password = resultset.getString("password");
+				
+
+				if (Username.equals(username) && Password.equals(password))
+				{
+					return true;
+					
+				}
+		    
+		    
+				
+			}
+		} 	catch (SQLException e) {
+			System.out.println(e.getMessage());
+		} finally {
+			if (resultset != null) {
+			resultset.close();
+		}
+			if (statement != null) {
+			statement.close();
+		}
+			if (dbConnection != null) {
+			dbConnection.close();
+		}
+		}
+		return false;
+		}
 	
 
 }
+	
+	
+
+
