@@ -31,9 +31,7 @@ public class AddSkillServlet extends HttpServlet  {
 			
 			HttpSession session =req.getSession(); //used to check whether user is logged in
 			StudentDAO dao = new StudentDAO();
-			SkillDAO skillDAO = new SkillDAO();
-			Student lewis = new Student("Lewis", "Frater", 23, "lewis@mail.com",
-					"MMU", "Computer Science", "bob123", "apples");
+			
 			
 			//password manager
 		
@@ -45,16 +43,6 @@ public class AddSkillServlet extends HttpServlet  {
 			String skillName = req.getParameter("skill");
 			String description = req.getParameter("description");
 			int rating = Integer.parseInt(req.getParameter("rating"));
-			
-			
-			Skill s = new Skill(skillName, description, rating, "04032019", lewis );
-			//inserting skill user indicated
-			try {
-				skillDAO.insertSkill(s);
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		
 		
 			resp.sendRedirect("home");	

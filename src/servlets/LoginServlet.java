@@ -8,6 +8,7 @@ package Servlets;
 */
 //@SuppressWarnings("serial")
 import java.io.PrintWriter;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
@@ -39,27 +40,36 @@ public class LoginServlet extends HttpServlet
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
 	{
+			StudentDAO studao = new StudentDAO();
+			
 			String uname = req.getParameter("username");
 			String password = req.getParameter("password");
 			HttpSession session =req.getSession(); //used to check whether user is logged in
-			Student lewis = new Student("Lewis", "Frater", 23, "lewis@mail.com",
-					"MMU", "Computer Science", "bob123", "apples");
 			
 			//password manager
-		if (uname.equals(lewis.getUsername())&& password.equals(lewis.getPassword()))
-		{
-			StudentDAO dao = new StudentDAO();
-			session.setAttribute("session",true); //once the user has logged in sets the session to true so on pages that require admin only have that
-			resp.sendRedirect("home");	
-		//	RequestDispatcher view = req.getRequestDispatcher("LoggedIn.jsp");
-		//	req.setAttribute("", );
-		//	view.forward(req, resp);
+		try {
+			if (studao.getStudent(uname,password) == true)
+			{
+				
+				session.setAttribute("session",true); //once the user has logged in sets the session to true so on pages that require admin only have that
+				//resp.sendRedirect("home");	
+				RequestDispatcher view = req.getRequestDispatcher("whateverpage.jsp");
+				req.setAttribute("username", uname);
+				view.forward(req, resp);
+				
+			}
 			
-		}
-		
-		else 
-		{
-			doGet(req, resp);
+			else 
+			{
+				System.out.print("fail");
+				RequestDispatcher view = req.getRequestDispatcher("addSkill.jsp");
+				view.forward(req, resp);
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 }
+
