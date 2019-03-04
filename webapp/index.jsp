@@ -104,7 +104,7 @@
               <span class="ico-circle"><i class="ion-monitor"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Web Design</h2>
+              <h2 class="s-title">About Us</h2>
               <p class="s-description text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
                 provident vitae! Magni
@@ -119,7 +119,7 @@
               <span class="ico-circle"><i class="ion-code-working"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Web Development</h2>
+              <h2 class="s-title">Feedback</h2>
               <p class="s-description text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
                 provident vitae! Magni
@@ -134,7 +134,7 @@
               <span class="ico-circle"><i class="ion-camera"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Photography</h2>
+              <h2 class="s-title"></h2>
               <p class="s-description text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
                 provident vitae! Magni
@@ -149,7 +149,7 @@
               <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Responsive Design</h2>
+              <h2 class="s-title"></h2>
               <p class="s-description text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
                 provident vitae! Magni
@@ -164,7 +164,7 @@
               <span class="ico-circle"><i class="ion-paintbrush"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Graphic Design</h2>
+              <h2 class="s-title"></h2>
               <p class="s-description text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
                 provident vitae! Magni
@@ -179,7 +179,7 @@
               <span class="ico-circle"><i class="ion-stats-bars"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Marketing Services</h2>
+              <h2 class="s-title">Track Your Progress</h2>
               <p class="s-description text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
                 provident vitae! Magni
