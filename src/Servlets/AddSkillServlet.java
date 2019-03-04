@@ -27,8 +27,7 @@ public class AddSkillServlet extends HttpServlet  {
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
 	{
-			String uname = req.getParameter("username");
-			String password = req.getParameter("password");
+			
 			
 			HttpSession session =req.getSession(); //used to check whether user is logged in
 			StudentDAO dao = new StudentDAO();
@@ -37,8 +36,7 @@ public class AddSkillServlet extends HttpServlet  {
 					"MMU", "Computer Science", "bob123", "apples");
 			
 			//password manager
-		if (uname.equals(lewis.getUsername()) && password.equals(lewis.getPassword()))
-		{
+		
 			
 			
 			
@@ -60,11 +58,8 @@ public class AddSkillServlet extends HttpServlet  {
 		
 		
 			resp.sendRedirect("home");	
-		}
 		
-		else 
-		{
-			doGet(req, resp);
-		}
+		
+		
 	}
 }
