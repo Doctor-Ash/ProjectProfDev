@@ -29,6 +29,9 @@ public class Student {
 		this.password = password;
 	}
 	
+	public Student()
+	{}
+	
 	public int getStu_id() {
 		return stu_id;
 	}
