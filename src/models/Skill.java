@@ -11,7 +11,7 @@ public class Skill {
 	private Student student;
 	private String date;
 	
-	public Skill(String skill_name, String description, int rating, String date,Student s) {
+	public Skill(String skill_name, String description, int rating, String date, Student s) {
 		this.skill_name = skill_name;
 		this.description = description;
 		this.rating = rating;
