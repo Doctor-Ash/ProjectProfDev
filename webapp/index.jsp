@@ -30,12 +30,11 @@
 
 
 	<a href="./login"><button>Login</button>  </a>
-	<a href="addSkill.jsp"><button>Add a skill</button></a>
 	
 	<br>
 	
 	<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-			<a href=./addSkill ><button>Add new skill</button></a>
+			<a href=./addSkill ><button>Add a skill</button></a>
 			<br>
 			<a href="./logout"><button>log out</button> </a>
 			</v:if>
@@ -43,10 +42,7 @@
  
 
 	<%
-		//ArrayList<Vehicle> AllVehicle = (ArrayList<Vehicle>) request.getAttribute("allVehicle");
-		//for(Vehicle x : AllVehicle){
-		//	out.write("" + x.getVehicle_id());
-	//	}	
+	
 	%>
 
 

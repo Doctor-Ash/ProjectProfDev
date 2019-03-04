@@ -21,8 +21,6 @@
 
 
 	<form method = "post">
-	   
-		Name: <input type="text" name="name">
 		Skill: <input type="text" name="skill">
 		Description: <input type="text" name="description">
 		Rating: <input type="text" name="rating">
