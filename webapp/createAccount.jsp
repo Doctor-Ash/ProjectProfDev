@@ -30,30 +30,42 @@
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
-				<h3>Sign In</h3>
+				<h3>Create</h3>
 			
 		
 			</div>
 			<div class="card-body">
-				<form  action="./login" method="post" >
+				<form  action="./create" method="post" >
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="username">
+						<input type="text" class="form-control" name="username" placeholder="username">
+						
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="password">
+						<input type="password" class="form-control" name="password" placeholder="password">
 					</div>
+					<input type="text" class="form-control" name="firstName" placeholder="Firstname">
+					<input type="text" class="form-control" name="lastName" placeholder="username">
+					<input type="number" class="form-control" name=age placeholder="age">
+					<input type="text" class="form-control" name="email" placeholder="username">
+					<input type="text" class="form-control" name="university" placeholder="username">
+					<input type="text" class="form-control" name="course" placeholder="username">
+					
+				
+					
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
 					</div>
 					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-right login_btn">
+						<input type="submit" value="Create" class="btn float-right login_btn">
+						
+						
 					</div>
 				</form>
 			</div>

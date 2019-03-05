@@ -9,7 +9,7 @@ public class Controller {
 		// TODO Auto-generated method stub
 
 
-		Server server = new Server(8005); //sets the sever port it will run on
+		Server server = new Server(8009); //sets the sever port it will run on
 		WebAppContext ctx = new WebAppContext();
 		ctx.setResourceBase("webapp"); //sets the directory for the web files
 		ctx.setContextPath("/profdev");
@@ -26,6 +26,8 @@ public class Controller {
 		ctx.addServlet("Servlets.LoginServlet", "/login");
 		ctx.addServlet("Servlets.LogoutServlet", "/logout");
 		ctx.addServlet("Servlets.AddSkillServlet", "/addSkill");
+		ctx.addServlet("Servlets.CreateAccountServlet", "/create");
+		//ctx.addServlet("Servlets.loggedIn", "/loggedIn");
 		
 		ctx.addServlet("Servlets.ServletHome","/home");
 

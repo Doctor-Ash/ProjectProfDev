@@ -53,7 +53,7 @@
             <a class="nav-link js-scroll" href="#feature">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Create account</a>
+            <a class="nav-link js-scroll" href="./create">Create account</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
