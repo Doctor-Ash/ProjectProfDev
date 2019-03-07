@@ -106,9 +106,7 @@
             <div class="service-content">
               <h2 class="s-title">About Us</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+                
               </p>
             </div>
           </div>
@@ -121,9 +119,7 @@
             <div class="service-content">
               <h2 class="s-title">Feedback</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+                
               </p>
             </div>
           </div>
@@ -134,11 +130,9 @@
               <span class="ico-circle"><i class="ion-camera"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title"></h2>
+              <h2 class="s-title">Creating An Account</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+                
               </p>
             </div>
           </div>
@@ -151,9 +145,7 @@
             <div class="service-content">
               <h2 class="s-title"></h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+               
               </p>
             </div>
           </div>
@@ -166,9 +158,7 @@
             <div class="service-content">
               <h2 class="s-title"></h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+           
               </p>
             </div>
           </div>
@@ -181,9 +171,7 @@
             <div class="service-content">
               <h2 class="s-title">Track Your Progress</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+                
               </p>
             </div>
           </div>
