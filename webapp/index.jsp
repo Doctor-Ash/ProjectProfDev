@@ -131,7 +131,7 @@
         <div class="col-md-4">
           <div class="service-box">
             <div class="service-ico">
-              <span class="ico-circle"><i class="ion-camera"></i></span>
+              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
             </div>
             <div class="service-content">
               <h2 class="s-title">Creating An Account</h2>
@@ -141,32 +141,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title"></h2>
-              <p class="s-description text-center">
-               
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title"></h2>
-              <p class="s-description text-center">
-           
-              </p>
-            </div>
-          </div>
-        </div>
+        
+        
         <div class="col-md-4">
           <div class="service-box">
             <div class="service-ico">
