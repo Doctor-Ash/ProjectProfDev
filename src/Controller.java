@@ -9,7 +9,7 @@ public class Controller {
 		// TODO Auto-generated method stub
 
 
-		Server server = new Server(8009); //sets the sever port it will run on
+		Server server = new Server(8005); //sets the sever port it will run on
 		WebAppContext ctx = new WebAppContext();
 		ctx.setResourceBase("webapp"); //sets the directory for the web files
 		ctx.setContextPath("/profdev");
