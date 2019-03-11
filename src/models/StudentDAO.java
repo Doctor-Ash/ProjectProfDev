@@ -38,12 +38,15 @@ public class StudentDAO {
 		Connection dbConnection = null;
 		Statement statement= null;
 		
-		String update = "INSERT INTO student (stu_id, first_name, last_name, age, email,"
+		String update = "INSERT INTO student (first_name, last_name, age, email,"
 				+ " university, course, username, password) VALUES "
-				+ "('"+in.getStu_id()+"','"+in.getFirst_name()+"','"+in.getLast_name()+"',"
+				+ "('"+in.getFirst_name()+"','"+in.getLast_name()+"',"
 						+ "'"+in.getAge()+"', '"+in.getEmail()+"', "
 						+ "'"+in.getUniversity()+"', '"+in.getCourse()+"',"
 						+ " '"+in.getUsername()+"', '"+in.getPassword()+"')";
+		
+		
+		
 		boolean ok = false;
 		
 		try 
@@ -110,7 +113,7 @@ public class StudentDAO {
 		Statement statement = null;
 		ResultSet resultset = null;
 	
-		String query = "SELECT * FROM student WHERE username =" + Username + " AND password =" + Password +";" ;
+		String query = "SELECT * FROM student Where username = " + Username + " ;" ;
 		
 		
 		try {
@@ -118,16 +121,16 @@ public class StudentDAO {
 				statement = dbConnection.createStatement();
 				System.out.println(query);
 				// execute SQL query
-				resultset = statement.executeQuery(query);
-				while (resultset.next()) {
+				statement.executeUpdate(query);
+				
 				
 
 				
 				String username = resultset.getString("username");
 				String password = resultset.getString("password");
-				
-
-				if (Username.equals(username) && Password.equals(password))
+				System.out.println(username);
+				System.out.println(password);
+				if (Username.equals(username))
 				{
 					return true;
 					
@@ -135,7 +138,7 @@ public class StudentDAO {
 		    
 		    
 				
-			}
+			
 		} 	catch (SQLException e) {
 			System.out.println(e.getMessage());
 		} finally {

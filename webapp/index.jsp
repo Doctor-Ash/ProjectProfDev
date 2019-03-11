@@ -53,7 +53,7 @@
             <a class="nav-link js-scroll" href="#feature">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Create account</a>
+            <a class="nav-link js-scroll" href="./create">Create account</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
@@ -104,11 +104,12 @@
               <span class="ico-circle"><i class="ion-monitor"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Web Design</h2>
+              <h2 class="s-title">About Us</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+                Our aim is for students to be able to record their currents skills and knowledge to see where they are currently at.
+                Then they will be able to retake the survey to see if they have improved over time. 
+                Your improvements will then be displayed though graphs.  
+                
               </p>
             </div>
           </div>
@@ -119,26 +120,10 @@
               <span class="ico-circle"><i class="ion-code-working"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Web Development</h2>
+              <h2 class="s-title">Feedback</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-camera"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Photography</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+              Please feel free to give us feedback! This will help to make our platform better for you.
+                
               </p>
             </div>
           </div>
@@ -149,41 +134,24 @@
               <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Responsive Design</h2>
+              <h2 class="s-title">Creating An Account</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+                You will have to create an account to be able to use our services. 
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Graphic Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
+        
+        
         <div class="col-md-4">
           <div class="service-box">
             <div class="service-ico">
               <span class="ico-circle"><i class="ion-stats-bars"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Marketing Services</h2>
+              <h2 class="s-title">Track Your Progress</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+              Your progress will be displayed though graphs, which will allow you to visualise your improvements.                 
               </p>
             </div>
           </div>

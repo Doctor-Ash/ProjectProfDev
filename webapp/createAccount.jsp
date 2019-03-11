@@ -30,37 +30,84 @@
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
-				<h3>Sign In</h3>
+				<h3>Create</h3>
 			
 		
 			</div>
 			<div class="card-body">
-				<form  action="./login" method="post" >
+				<form  action="./create" method="post" >
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
 						<input type="text" class="form-control" name="username" placeholder="username">
 						
+						
 					</div>
-					
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" name = "password" placeholder="password">
+						<input type="password" class="form-control" name="password" placeholder="password">
 					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+					<input type="text" class="form-control" name="firstName" placeholder="Firstname">
+						
+					</div>
+						<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+					<input type="text" class="form-control" name="lastName" placeholder="lastName">
+						
+					</div>
+						<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+					<input type="number" class="form-control" name=age placeholder="age">
+						
+					</div>
+						<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+					<input type="text" class="form-control" name="email" placeholder="email">
+						
+					</div>
+					
+						<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+					<input type="text" class="form-control" name="university" placeholder="university">
+						
+					</div>
+					
+						<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+					<input type="text" class="form-control" name="course" placeholder="course">
+						
+					</div>
+					
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
 					</div>
 					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-right login_btn">
+						<input type="submit" value="Create" class="btn float-right login_btn">
+						
+						
 					</div>
 				</form>
 			</div>
 			<div class="card-footer">
 				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="./create">Sign Up</a>
+					Have a account?<a href="./login">Login</a>
 				</div>
 				<div class="d-flex justify-content-center">
 					<a href="#">Forgot your password?</a>
