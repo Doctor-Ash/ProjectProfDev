@@ -66,6 +66,12 @@
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
 			</v:if>
+			
+			 <li class="nav-item">
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
+			</v:if>
+			</li>
             
           </li>
           <li class="nav-item">

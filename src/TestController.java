@@ -15,7 +15,7 @@ public class TestController {
 		Student lewis = new Student("Lewis", "Frater", 23, "lewis@mail.com",
 				"MMU", "Computer Science", "bob123", "apples");
 		
-		Skill comms = new Skill("Communication", "description", 8,  lewis);
+		//Skill comms = new Skill("Communication", "description", 8,  lewis);
 		
 		// ########STUDENT INSERT TEST############ PASSED 12/02, LF
 		 /* try {
