@@ -36,9 +36,9 @@ public class SkillDAO {
 		Connection dbConnection = null;
 		Statement statement= null;
 		
-		String update = "INSERT INTO skill (skill_id, skill_name, description, rating, date,"
+		String update = "INSERT INTO skill (skill_name, description, rating, date,"
 				+ " username) VALUES "
-				+ "('"+in.getSkill_id()+"','"+in.getSkill_name()+"','"+in.getDescription()+"',"
+				+ "('"+in.getSkill_name()+"','"+in.getDescription()+"',"
 						+ "'"+in.getRating()+"', datetime('now'), "
 						+ "'"+in.getUsername()+"')";
 		boolean ok = false;
