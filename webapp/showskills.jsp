@@ -46,27 +46,14 @@
           <li class="nav-item">
             <a class="nav-link js-scroll active" href="./home">Home</a>
           </li>
-          <li class="nav-item">
-	          <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		      	<a class="nav-link js-scroll" href="./logout">Log out</a>
-			  </v:if>
-				
-			  <v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
-		      	<a class="nav-link js-scroll" href="./login">Log in</a>
-			  </v:if>
+           <li class="nav-item">
+            <a class="nav-link js-scroll active" href="./logout">Log out</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#feature">Features</a>
           </li>
           <li class="nav-item">
-          	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
-		      	<a class="nav-link js-scroll" href="./create">Create account</a>
-			</v:if>
-			
-			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
-			</v:if>
-            
+            <a class="nav-link js-scroll" href="./showskills">Show Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
@@ -79,17 +66,7 @@
 
   <!--/ Intro Skew Star /-->
   <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="intro-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">Professional Development Planner</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Track your skills,See your improvements,Develop as a person</span><strong class="text-slider"></strong></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
-      </div>
-    </div>
+    
   </div>
   <!--/ Intro Skew End /-->
 
@@ -97,79 +74,65 @@
   <!--/ Section Services Star /-->
   <section id="feature" class="services-mf route">
     <div class="container">
-      <div class="row">
+    
+    
+      <div class="row"><!-- Row start -->
+      
+      
         <div class="col-sm-12">
           <div class="title-box text-center">
             <h3 class="title-a">
-              Services
+              Skills
             </h3>
             <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              List of your skills
             </p>
             <div class="line-mf"></div>
           </div>
         </div>
       </div>
       <div class="row">
+      
         <div class="col-md-4">
           <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-monitor"></i></span>
-            </div>
             <div class="service-content">
-              <h2 class="s-title">About Us</h2>
-              <p class="s-description text-center">
-                Our aim is for students to be able to record their currents skills and knowledge to see where they are currently at.
-                Then they will be able to retake the survey to see if they have improved over time. 
-                Your improvements will then be displayed though graphs.  
-                
-              </p>
+              <h2 class="s-title">Skill 1</h2>
+              
+              
+              
+              
             </div>
           </div>
         </div>
+        
         <div class="col-md-4">
           <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code-working"></i></span>
-            </div>
             <div class="service-content">
-              <h2 class="s-title">Feedback</h2>
-              <p class="s-description text-center">
-              Please feel free to give us feedback! This will help to make our platform better for you.
-                
-              </p>
+              <h2 class="s-title">Skill 2</h2>
+              
+              
+              
+              
             </div>
           </div>
         </div>
+        
         <div class="col-md-4">
           <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-            </div>
             <div class="service-content">
-              <h2 class="s-title">Creating An Account</h2>
-              <p class="s-description text-center">
-                You will have to create an account to be able to use our services. 
-              </p>
+              <h2 class="s-title">Skill 3</h2>
+              
+              
+              
+              
             </div>
           </div>
         </div>
         
         
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-stats-bars"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Track Your Progress</h2>
-              <p class="s-description text-center">
-              Your progress will be displayed though graphs, which will allow you to visualise your improvements.                 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div><!-- row end -->
+      
+      
     </div>
   </section>
   <!--/ Section Services End /-->
