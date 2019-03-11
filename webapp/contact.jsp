@@ -84,8 +84,8 @@
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">Professional Development Planner</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Track your skills,See your improvements,Develop as a person</span><strong class="text-slider"></strong></p>
+          <h1 class="intro-title mb-4">Contact Us</h1>
+          <p class="intro-subtitle"><span class="text-slider-items"></span><strong class="text-slider"></strong></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
@@ -101,11 +101,37 @@
         <div class="col-sm-12">
           <div class="title-box text-center">
             <h3 class="title-a">
-              Services
+              Contact Details 
             </h3>
             <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Call us on: +44(0)7248994017
             </p>
+            <p> You can email us at:</p>
+            <p> ProfessionalDevelopment@gmail.com</p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+           
+        
+        
+      </div>
+  </section>
+  <!--/ Section Services End /-->
+  
+   <!--/ Section Services Star /-->
+  <section id="feature" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              FAQ 
+            </h3>
+            <p class="subtitle-a">
+            
+            </p>
+            
             <div class="line-mf"></div>
           </div>
         </div>
@@ -117,11 +143,10 @@
               <span class="ico-circle"><i class="ion-monitor"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">About Us</h2>
+              <h2 class="s-title">Do i need to make an account to add skills?</h2>
               <p class="s-description text-center">
-                Our aim is for students to be able to record their currents skills and knowledge to see where they are currently at.
-                Then they will be able to retake the survey to see if they have improved over time. 
-                Your improvements will then be displayed though graphs.  
+               Yes, you will need to create an account which is very easy to do at the top of the page.
+               Once you have created an account you will then be able to add information to the skills.  
                 
               </p>
             </div>
@@ -133,27 +158,15 @@
               <span class="ico-circle"><i class="ion-code-working"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Feedback</h2>
+              <h2 class="s-title">I have forgot my password, how do i get a new one?</h2>
               <p class="s-description text-center">
-              Please feel free to give us feedback! This will help to make our platform better for you.
-                
+                If you have forgotten your password, click on "Forgotten my password" below the login and you
+                 will be prompted to put you email address in and we will email you a link where you can change your password.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Creating An Account</h2>
-              <p class="s-description text-center">
-                You will have to create an account to be able to use our services. 
-              </p>
-            </div>
-          </div>
-        </div>
+        
         
         
         <div class="col-md-4">
@@ -162,9 +175,9 @@
               <span class="ico-circle"><i class="ion-stats-bars"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Track Your Progress</h2>
+              <h2 class="s-title"></h2>
               <p class="s-description text-center">
-              Your progress will be displayed though graphs, which will allow you to visualise your improvements.                 
+                               
               </p>
             </div>
           </div>
