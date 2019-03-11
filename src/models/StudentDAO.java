@@ -113,7 +113,7 @@ public class StudentDAO {
 		Statement statement = null;
 		ResultSet resultset = null;
 	
-		String query = "SELECT * FROM student Where username = " + Username + " ;" ;
+		String query = "SELECT * FROM student WHERE username = '" + Username + "'";
 		
 		
 		try {
@@ -121,7 +121,7 @@ public class StudentDAO {
 				statement = dbConnection.createStatement();
 				System.out.println(query);
 				// execute SQL query
-				statement.executeUpdate(query);
+				resultset = statement.executeQuery(query);
 				
 				
 

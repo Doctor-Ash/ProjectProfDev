@@ -27,6 +27,7 @@ public class Controller {
 		ctx.addServlet("Servlets.LogoutServlet", "/logout");
 		ctx.addServlet("Servlets.AddSkillServlet", "/addSkill");
 		ctx.addServlet("Servlets.CreateAccountServlet", "/create");
+		ctx.addServlet("Servlets.ShowSkillsServlet", "/showskills");
 		//ctx.addServlet("Servlets.loggedIn", "/loggedIn");
 		
 		ctx.addServlet("Servlets.ServletHome","/home");

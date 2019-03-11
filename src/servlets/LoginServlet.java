@@ -53,7 +53,7 @@ public class LoginServlet extends HttpServlet
 				
 				session.setAttribute("session",true); //once the user has logged in sets the session to true so on pages that require admin only have that
 				//resp.sendRedirect("home");	
-				RequestDispatcher view = req.getRequestDispatcher("whateverpage.jsp");
+				RequestDispatcher view = req.getRequestDispatcher("index.jsp");
 				req.setAttribute("username", uname);
 				view.forward(req, resp);
 				

@@ -18,8 +18,14 @@ public class Skill {
 		this.student = s;
 		this.date = date;
 		
-		//adds this skill to the student who created it
-		//s.addSkill(this);
+	}
+	
+	public Skill(String skill_name, String description, int rating, Student s) {
+		this.skill_name = skill_name;
+		this.description = description;
+		this.rating = rating;
+		this.student = s;
+		
 	}
 	
 	public String getUsername() {
