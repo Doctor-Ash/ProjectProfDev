@@ -34,7 +34,7 @@
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top">DevFolio</a>
+      <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
@@ -44,16 +44,29 @@
       <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#home">Home</a>
+            <a class="nav-link js-scroll active" href="./home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="./login">Login</a>
+	          <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./logout">Log out</a>
+			  </v:if>
+				
+			  <v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./login">Log in</a>
+			  </v:if>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#feature">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="./create">Create account</a>
+          	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./create">Create account</a>
+			</v:if>
+			
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
+			</v:if>
+            
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
