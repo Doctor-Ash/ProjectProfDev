@@ -9,13 +9,13 @@ public class TestController {
 
 	public static void main(String[] args) {
 		
-		StudentDAO studenDao = new StudentDAO();
+		StudentDAO studentDao = new StudentDAO();
 		SkillDAO skillDao = new SkillDAO();
 		
 		Student lewis = new Student("Lewis", "Frater", 23, "lewis@mail.com",
 				"MMU", "Computer Science", "bob123", "apples");
 		
-		Skill comms = new Skill("Communication", "description", 8, "12022019", lewis);
+		Skill comms = new Skill("Communication", "description", 8,  lewis);
 		
 		// ########STUDENT INSERT TEST############ PASSED 12/02, LF
 		 /* try {
@@ -37,8 +37,8 @@ public class TestController {
 		*/
 		
 		//#############SKILLS INSERT TEST################# PASSED 12/02, LF
-		/*
-		try {
+		
+		/*try {
 			skillDao.insertSkill(comms);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

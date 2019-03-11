@@ -39,7 +39,7 @@ public class SkillDAO {
 		String update = "INSERT INTO skill (skill_id, skill_name, description, rating, date,"
 				+ " username) VALUES "
 				+ "('"+in.getSkill_id()+"','"+in.getSkill_name()+"','"+in.getDescription()+"',"
-						+ "'"+in.getRating()+"', '"+in.getDate()+"', "
+						+ "'"+in.getRating()+"', datetime('now'), "
 						+ "'"+in.getUsername()+"')";
 		boolean ok = false;
 		
@@ -102,7 +102,7 @@ public class SkillDAO {
 	}
 	
 	
-	public Boolean updateSkill(Skill up,int skill_id) throws SQLException {
+	public Boolean updateSkill(Skill up, int skill_id) throws SQLException {
 		System.out.println(" Updating skill with id = " + skill_id);
 		Connection dbConnection = null;
 		Statement statement = null;

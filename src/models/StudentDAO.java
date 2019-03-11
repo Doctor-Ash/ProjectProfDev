@@ -113,7 +113,7 @@ public class StudentDAO {
 		Statement statement = null;
 		ResultSet resultset = null;
 	
-		String query = "SELECT * FROM student Where username = " + Username + " ;" ;
+		String query = "SELECT * FROM student WHERE username = '" +Username+ "';" ;
 		
 		
 		try {
@@ -132,6 +132,7 @@ public class StudentDAO {
 				System.out.println(password);
 				if (Username.equals(username))
 				{
+					System.out.println("True.");
 					return true;
 					
 				}
