@@ -26,6 +26,60 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
 <body>
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="./home">Home</a>
+          </li>
+          <li class="nav-item">
+	          <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./logout">Log out</a>
+			  </v:if>
+				
+			  <v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./login">Log in</a>
+			  </v:if>
+          </li>
+          <li class="nav-item">
+            <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./showunits">Show Units</a>
+			</v:if>
+          
+          </li>
+          <li class="nav-item">
+          	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./create">Create account</a>
+			</v:if>
+			
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
+			</v:if>
+			
+			 <li class="nav-item">
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
+			</v:if>
+			</li>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
