@@ -32,6 +32,8 @@
 <body id="page-top">
 
   <!--/ Nav Star /-->
+  <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+  
   <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
@@ -151,6 +153,7 @@
       </div><!-- row end -->
       
       
+    </div>
     </div>
   </section>
   <!--/ Section Services End /-->
