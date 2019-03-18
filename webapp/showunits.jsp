@@ -57,6 +57,11 @@
           <li class="nav-item">
             <a class="nav-link js-scroll" href="./showskills">Show Skills</a>
           </li>
+           <li class="nav-item">
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
+			</v:if>
+			</li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
           </li>
@@ -112,7 +117,11 @@
             <p class="subtitle-a">
               List of your Units
             </p>
-            <div class="line-mf"></div>
+            <div class="">
+            	<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+			    	<a class="nav-link js-scroll" href="./addUnit"><button>Add Units</button></a>
+				</v:if>
+            </div>
           </div>
         </div>
       </div>
@@ -124,7 +133,11 @@
             <div class="service-content">
               <h2 class="s-title">${v.getUnit_name() }</h2>
               <h3 class = "s-title">Grade = ${v.getGrade()} </h3>
-              
+              <p class = "s-title">
+	              <a href="#">
+	              	<button>DELETE</button>
+	              </a>
+              </p>
 
             </div>
           </div>
