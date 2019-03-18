@@ -32,6 +32,10 @@ public class ServletHome extends HttpServlet {
 		
 		StudentDAO dao = new StudentDAO();
 		HttpSession session = req.getSession();
+		//String user = (String) session.getAttribute("username");
+	
+		
+	
 		session.setAttribute("session",false);
 	
 		RequestDispatcher view = req.getRequestDispatcher("index.jsp");

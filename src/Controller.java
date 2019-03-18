@@ -31,6 +31,8 @@ public class Controller {
 		ctx.addServlet("Servlets.GraphTest", "/graph");
 		ctx.addServlet("Servlets.ShowUnitsServlet", "/showunits");
 		ctx.addServlet("Servlets.AddUnitServlet", "/addUnit");
+		ctx.addServlet("Servlets.AddGoalServlet", "/addGoal");
+		ctx.addServlet("Servlets.ShowGoalServlet", "/showGoals");
 		//ctx.addServlet("Servlets.loggedIn", "/loggedIn");
 		
 		ctx.addServlet("Servlets.ServletHome","/home");

@@ -45,7 +45,7 @@ public class LogoutServlet extends HttpServlet
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
 	{
-			
+		
 
 	
 	}
