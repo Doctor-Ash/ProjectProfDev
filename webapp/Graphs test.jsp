@@ -1,6 +1,12 @@
+ <%@page import="models.Student" %>
+<%@page import="models.Skill" %>
+<%@page import="java.util.ArrayList" %>
   <!DOCTYPE HTML>
   <html>
   <head>
+  	<meta charset="ISO-8859-1" >
+	<meta  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="v" %> >
+	<link rel="stylesheet" href="css/site.css">
   <script>
   window.onload = function () {
 
@@ -15,16 +21,10 @@
       {
           type: "spline", //change it to line, area, column, pie, etc
           dataPoints: [
-              { x: 1, y: 1 },
-              { x: 2, y: 2 },
-              { x: 3, y: 3 },
-              { x: 4, y: 4 },
-              { x: 5, y: 5 },
-              { x: 6, y: 6 },
-              { x: 7, y: 7 },
-              { x: 8, y: 8 },
-              { x: 9, y: 9 },
-              { x: 10, y: 10 }
+             <v:forEach items="${rating}" var="v">
+              { x: ${${v.getRating()}, y: ${v.getDate()} },
+           
+              </v:forEach>
 
           ]
       }

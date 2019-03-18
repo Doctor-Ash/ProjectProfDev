@@ -144,7 +144,7 @@
 	              <a href="#">
 	              	<button>UPDATE</button>
 	              </a>
-	              <a href="#">
+	              <a href="./graph?skillID=${v.getSkill_name()}">
 	              	<button>SHOW GRAPH</button>
 	              </a>
               </p>
