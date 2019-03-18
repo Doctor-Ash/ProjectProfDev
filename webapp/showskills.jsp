@@ -64,11 +64,9 @@
   </nav>
   <!--/ Nav End /-->
 
-  <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
-    
-  </div>
-  <!--/ Intro Skew End /-->
+ <br>
+ <br>
+ <br>
 
 
   <!--/ Section Services Star /-->
