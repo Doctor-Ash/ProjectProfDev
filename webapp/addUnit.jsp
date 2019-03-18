@@ -26,9 +26,18 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <style>
+  	 
+  .box2 {
+  	clear: both;
+  	position: relative;
+  	top: 200px;
+  }
+  
+  </style>
+ 
 	
 </head>
-<body>
 <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
@@ -85,10 +94,12 @@
       </div>
     </div>
   </nav>
+<body>
+
   <!-- if logged in display the form -->
 
 
-
+<div class="box2">
 <h1>Insert Unit</h1>
 
 
@@ -237,7 +248,7 @@
 		
 	</form>
 
-	
+</div>	
 
 
 </body>

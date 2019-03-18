@@ -26,6 +26,18 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <style>
+  .box2 {
+  	clear: both;
+  	position: relative;
+  	top: 200px;
+  }
+  
+  html, nav {
+  	
+  }
+  
+  </style>
 	
 </head>
 <body>
@@ -88,12 +100,12 @@
   <!-- if logged in display the form -->
 
 
-
+<div class="box2">
 <h1>Insert Skill</h1>
 
 
-
-	<form method = "post"  action="./addSkill">
+              
+              <form method = "post"  action="./addSkill">
 	
 	Communication Rating :
 	<select name="selectCommunicationRating">
@@ -208,18 +220,12 @@
 		<!-- form for add -->
 		
 	</form>
+              
+</div>
+
 
 	
 
-	
-	<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-			<a href="./logout"><button>log out</button> </a>
-			</v:if>
-			
-			<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
-			
-			<a href="./login"><button>Log in</button> </a>
-	</v:if>
 
 </body>
 </html>
