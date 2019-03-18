@@ -71,7 +71,6 @@
 			</v:if>
 			</li>
             
-          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
           </li>
