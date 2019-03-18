@@ -98,8 +98,8 @@
 
   <!-- if logged in display the form -->
 
-
-<div class="box2">
+<div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+<div class="box2" >
 <center> <h1>Insert Unit</h1>
 
 
@@ -250,6 +250,7 @@
 	</center>
 
 </div>	
+</div>
 
 
 </body>
