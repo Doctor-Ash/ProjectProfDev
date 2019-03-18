@@ -5,6 +5,8 @@ import models.Skill;
 import models.SkillDAO;
 import models.Student;
 import models.StudentDAO;
+import models.Unit;
+import models.UnitDAO;
 
 public class TestController {
 
@@ -12,10 +14,13 @@ public class TestController {
 		
 		StudentDAO studentDao = new StudentDAO();
 		SkillDAO skillDao = new SkillDAO();
+		UnitDAO unitDAO = new UnitDAO();
 		ArrayList<Skill> allSkills = new ArrayList<Skill>();
+		ArrayList<Unit> allUnits = new ArrayList<Unit>();
 		
 		Student lewis = new Student("Lewis", "Frater", 23, "lewis@mail.com",
 				"MMU", "Computer Science", "bob123", "apples");
+		Unit advProg = new Unit("Advanced Programming", 83, lewis.getUsername());
 		
 		//Skill comms = new Skill("Communication", "description", 8,  "bob123");
 		
@@ -38,16 +43,16 @@ public class TestController {
 		}
 		*/
 		
-		//#################Skills retrieve for a given username
+		//#################Skills retrieve for a given username########### PASSED 18/03 LF
 		
-		try {
+		/*try {
 			allSkills = skillDao.getAllSkills(lewis.getUsername());
 			for(Skill s : allSkills) {
 				System.out.println(s.getSkill_name());
 			}
 		} catch(SQLException e) {
 			e.printStackTrace();
-		}
+		}*/
 		
 		//#############SKILLS INSERT TEST################# PASSED 12/02, LF
 		
@@ -59,7 +64,7 @@ public class TestController {
 		}
 		*/
 		
-		//###############SKILLS DELETE TEST#################
+		//###############SKILLS DELETE TEST################# PASSED 18/03 LF
 		/*
 		try {
 			skillDao.deleteSkill(0);
@@ -68,6 +73,30 @@ public class TestController {
 			e.printStackTrace();
 		}
 		*/
+		
+		//####################UNIT INSERT TEST####################### PASSED 18/03 LF
+		try {
+			unitDAO.insertUnit(advProg);
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+		//########################UNIT DELETE TEST###################### PASSED 18/03 LF
+		/*try {
+			unitDAO.deleteUnit(1);
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}*/
+		
+		//#####################RETRIEVE UNITS FOR GIVEN USERNAME############## PASSED 18/03 LF
+		/*try {
+			allUnits = unitDAO.getAllUnits(lewis.getUsername());
+			for(Unit u : allUnits) {
+				System.out.println(u.getUnit_name());
+			}
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}*/
 	}
 
 }

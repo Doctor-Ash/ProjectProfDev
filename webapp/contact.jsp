@@ -56,7 +56,14 @@
 			  </v:if>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#feature">Features</a>
+          	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="#feature">Features</a>
+			</v:if>
+          </li>
+          <li class="nav-item">
+            <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./showunits">Show Units</a>
+			</v:if>
           </li>
           <li class="nav-item">
           	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->

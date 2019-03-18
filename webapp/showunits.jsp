@@ -86,22 +86,20 @@
         <div class="col-sm-12">
           <div class="title-box text-center">
             <h3 class="title-a">
-              Skills
+              Units
             </h3>
             
             <table align="center" cellpadding="5px" border="1px solid black">
 			<tr>
-				<th>Name</th>
-				<th>Rating</th>
-				<th>Date</th>
+				<th>Unit Name</th>
+				<th>Grade</th>
 				
 				
 			</tr>
-			<v:forEach items="${skills}" var="v">
+			<v:forEach items="${units}" var="v">
 				<tr>
-					<td>${v.getSkill_name() }</td>
-					<td>${v.getRating() }</td>
-					<td>${v.getDate() }</td>
+					<td>${v.getUnit_name() }</td>
+					<td>${v.getGrade() }</td>
 					<v:if test="${sesh == true }">
 						<td><button>Delete</button></td>
 					</v:if>
@@ -112,33 +110,22 @@
 		
 		</table>
             <p class="subtitle-a">
-              List of your skills
+              List of your Units
             </p>
             <div class="line-mf"></div>
           </div>
         </div>
       </div>
       
-      <v:forEach items="${skills}" var="v">
+      <v:forEach items="${units}" var="v">
       
       	<div class="col-md-4" id="skillBoxes" >
           <div class="service-box">
             <div class="service-content">
-              <h2 class="s-title">${v.getSkill_name() }</h2>
-              <h3 class = "s-title">Rating = ${v.getRating()} </h3>
-              <h3 class = "s-title">Last updated = ${v.getDate()} </h3>
-              <p class = "s-title">
-	              <a href="#">
-	              	<button>UPDATE</button>
-	              </a>
-	              <a href="#">
-	              	<button>SHOW GRAPH</button>
-	              </a>
-              </p>
+              <h2 class="s-title">${v.getUnit_name() }</h2>
+              <h3 class = "s-title">Grade = ${v.getGrade()} </h3>
               
-              
-              
-              
+
             </div>
           </div>
         </div>
