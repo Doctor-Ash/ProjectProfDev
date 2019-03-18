@@ -43,22 +43,10 @@ public class AddUnitServlet extends HttpServlet  {
 			int grade = Integer.parseInt(gradeS);
 			Unit u = new Unit(unit, grade, user);
 			
-			
-			 
-			 
-			
-			
-			//int rating = (Integer.parseInt(req.getParameter("selectRating")));
-			//String description = req.getParameter("description");
-			//System.out.println(rating + description + skill + user);
-			
-			//Skill s = new Skill(skill, description, rating, user);
-			
+
 			try {
 				unitdao.insertUnit(u);
-				
-				
-				
+
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
