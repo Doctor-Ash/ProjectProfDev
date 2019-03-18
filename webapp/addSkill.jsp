@@ -22,8 +22,88 @@
 
 	<form method = "post"  action="./addSkill">
 	
-	Skill: 
-	<select name="selectSkill">
+	Communication Rating :
+	<select name="selectCommunicationRating">
+	 <option value="1">1</option>
+	 <option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	</select>
+	
+		Description: <input type="text" name="Communicationdescription">
+	<br>
+	
+	Teamwork Rating :
+	<select name="selectTeamworkRating">
+	 <option value="1">1</option>
+	 <option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	</select>
+	Description: <input type="text" name="Teamworkdescription">
+	<br>
+	
+		Organisation Rating :
+	<select name="selectOrganisationRating">
+	 <option value="1">1</option>
+	 <option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	</select>
+	Description: <input type="text" name="selectOrganisationdescription">
+	<br>
+	
+		Time Management Rating :
+	<select name="selectTimemanagementRating">
+	 <option value="1">1</option>
+	 <option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	</select>
+	Description: <input type="text" name="Timemanagementdescription">
+	<br>
+	
+		Personal Development Rating :
+	<select name="selectPersonaldevelopmentRating">
+	 <option value="1">1</option>
+	 <option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	</select>
+	Description: <input type="text" name="PersonalDevelopmentdescription">
+	<br>
+	
+	<!--  <select name="selectSkill">
 	 <option value="Communication">Communication</option>
 	  <option value="TeamWork">Team Work</option>
 	  <option value="Organisation">"Organisation"</option>
@@ -45,7 +125,10 @@
 	</select>
 	
 	
+	
 		Description: <input type="text" name="description">
+		
+		-->
 		
 		<input type="submit" value="Submit">
 		
