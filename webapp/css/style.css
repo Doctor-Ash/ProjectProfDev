@@ -50,6 +50,10 @@ a:hover {
   color: #4e4e4e;
 }
 
+#updateBtn {
+	float: right;
+	
+}
 .box-shadow,
 .paralax-mf,
 .service-box,
@@ -185,6 +189,7 @@ a:hover {
 }
 
 /*------/ Box /------*/
+
 
 .box-pl2 {
   padding-left: 2rem;
