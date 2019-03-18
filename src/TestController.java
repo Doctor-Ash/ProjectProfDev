@@ -1,4 +1,5 @@
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import models.Skill;
 import models.SkillDAO;
@@ -11,11 +12,12 @@ public class TestController {
 		
 		StudentDAO studentDao = new StudentDAO();
 		SkillDAO skillDao = new SkillDAO();
+		ArrayList<Skill> allSkills = new ArrayList<Skill>();
 		
 		Student lewis = new Student("Lewis", "Frater", 23, "lewis@mail.com",
 				"MMU", "Computer Science", "bob123", "apples");
 		
-		//Skill comms = new Skill("Communication", "description", 8,  lewis);
+		//Skill comms = new Skill("Communication", "description", 8,  "bob123");
 		
 		// ########STUDENT INSERT TEST############ PASSED 12/02, LF
 		 /* try {
@@ -35,6 +37,17 @@ public class TestController {
 			e.printStackTrace();
 		}
 		*/
+		
+		//#################Skills retrieve for a given username
+		
+		try {
+			allSkills = skillDao.getAllSkills(lewis.getUsername());
+			for(Skill s : allSkills) {
+				System.out.println(s.getSkill_name());
+			}
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
 		
 		//#############SKILLS INSERT TEST################# PASSED 12/02, LF
 		

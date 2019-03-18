@@ -73,15 +73,42 @@
   <section id="feature" class="services-mf route">
     <div class="container">
     
+     
     
       <div class="row"><!-- Row start -->
       
-      
+      <%
+     
+      %>
+     
         <div class="col-sm-12">
           <div class="title-box text-center">
             <h3 class="title-a">
               Skills
             </h3>
+            
+            <table align="center" cellpadding="5px" border="1px solid black">
+			<tr>
+				<th>Name</th>
+				<th>Rating</th>
+				<th>Date</th>
+				
+				
+			</tr>
+			<v:forEach items="${skills}" var="v">
+				<tr>
+					<td>${v.getSkill_name() }</td>
+					<td>${v.getRating() }</td>
+					<td>${v.getDate() }</td>
+					<v:if test="${sesh == true }">
+						<td><button>Delete</button></td>
+					</v:if>
+				</tr>
+			</v:forEach>
+		
+		
+		
+		</table>
             <p class="subtitle-a">
               List of your skills
             </p>
@@ -89,44 +116,35 @@
           </div>
         </div>
       </div>
+      
+      <v:forEach items="${skills}" var="v">
+      
+      	<div class="col-md-4" id="skillBoxes" >
+          <div class="service-box">
+            <div class="service-content">
+              <h2 class="s-title">${v.getSkill_name() }</h2>
+              <h3 class = "s-title">Rating = ${v.getRating()} </h3>
+              <h3 class = "s-title">Last updated = ${v.getDate()} </h3>
+              <p class = "s-title">
+	              <a href="#">
+	              	<button>UPDATE</button>
+	              </a>
+	              <a href="#">
+	              	<button>SHOW GRAPH</button>
+	              </a>
+              </p>
+              
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      
+      </v:forEach>
       <div class="row">
       
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-content">
-              <h2 class="s-title">Skill 1</h2>
-              
-              
-              
-              
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-content">
-              <h2 class="s-title">Skill 2</h2>
-              
-              
-              
-              
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-content">
-              <h2 class="s-title">Skill 3</h2>
-              
-              
-              
-              
-            </div>
-          </div>
-        </div>
-        
+       
         
       </div><!-- row end -->
       
