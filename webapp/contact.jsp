@@ -175,9 +175,10 @@
               <span class="ico-circle"><i class="ion-stats-bars"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title"></h2>
+              <h2 class="s-title">How do i view my skills?</h2>
               <p class="s-description text-center">
-                               
+                 When you have added skills, you will then be able to go to the show skills page where you will then see 
+                 all the skills you have added with a timestamp of when you inputted the skills.               
               </p>
             </div>
           </div>
