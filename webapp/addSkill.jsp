@@ -33,7 +33,7 @@
   	top: 200px;
   }
   
-  html, nav {
+  nav {
   	
   }
   
@@ -42,7 +42,7 @@
 </head>
 <body>
 <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
