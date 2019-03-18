@@ -40,16 +40,45 @@ public class AddSkillServlet extends HttpServlet  {
 			
 			//password manager
 		
-			String skill =  (String) req.getParameter("selectSkill");
+			String skill =  "Commuication";
+			int communicationRating = (Integer.parseInt(req.getParameter("selectCommunicationRating")));
+			String communicationDesc = req.getParameter("Communicationdescription");
+			Skill Communication = new Skill("Communication", communicationDesc, communicationRating, user);
 			
-			int rating = (Integer.parseInt(req.getParameter("selectRating")));
-			String description = req.getParameter("description");
-			System.out.println(rating + description + skill + user);
 			
-			Skill s = new Skill(skill, description, rating, user);
+			int TeamworkRating = (Integer.parseInt(req.getParameter("selectTeamworkRating")));
+			String TeamworkDesc = req.getParameter("Communicationdescription");
+			Skill Teamwork = new Skill("TeamWork", TeamworkDesc, TeamworkRating, user);
+			
+			int OrganisationRating = (Integer.parseInt(req.getParameter("selectOrganisationRating")));
+			String OrganisationDesc = req.getParameter("Organisationdescription");
+			Skill Organisation = new Skill("Organisation", OrganisationDesc, OrganisationRating, user);
+			
+			int TimeManagementRating = (Integer.parseInt(req.getParameter("selectTimemanagementRating")));
+			String TimeManagementDesc = req.getParameter("Timemanagementdescription");
+			Skill TimeManagement = new Skill("TimeManagement", TimeManagementDesc, TimeManagementRating, user);
+			
+			int PersonalDevelopmentRating = (Integer.parseInt(req.getParameter("selectPersonaldevelopmentRating")));
+			String PersonalDevelopmentDesc = req.getParameter("Personaldevelopmentdescription");
+			Skill PersonalDevelopment = new Skill("PersonalDevelopment", PersonalDevelopmentDesc, PersonalDevelopmentRating, user);
+			 
+			 
+			
+			
+			//int rating = (Integer.parseInt(req.getParameter("selectRating")));
+			//String description = req.getParameter("description");
+			//System.out.println(rating + description + skill + user);
+			
+			//Skill s = new Skill(skill, description, rating, user);
 			
 			try {
-				skilldao.insertSkill(s);
+				skilldao.insertSkill(Communication);
+				skilldao.insertSkill(Teamwork);
+				skilldao.insertSkill(Organisation);
+				skilldao.insertSkill(TimeManagement);
+				skilldao.insertSkill(PersonalDevelopment);
+				
+				
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

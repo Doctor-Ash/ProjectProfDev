@@ -37,15 +37,19 @@ public class Skill {
 		this.date = date;
 		
 	}
+	public Skill(int rating, String date) {
 	
+		this.rating = rating;
+		this.date = date;
+		
+	}
+
+
+
 	
 	
 
 
-	
-	
-	
-	
 	public int getSkill_id() {
 		return skill_id;
 	}

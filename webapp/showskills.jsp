@@ -87,7 +87,7 @@
               Skills
             </h3>
             
-            <table align="center" cellpadding="5px" border="solid 1px black">
+            <table align="center" cellpadding="5px" border="1px solid black">
 			<tr>
 				<th>Name</th>
 				<th>Rating</th>
@@ -117,11 +117,22 @@
         </div>
       </div>
       
-      <v:foreach>
-      	<div class="col-md-4">
+      <v:forEach items="${skills}" var="v">
+      
+      	<div class="col-md-4" id="skillBoxes" >
           <div class="service-box">
             <div class="service-content">
-              <h2 class="s-title">Skill 1</h2>
+              <h2 class="s-title">${v.getSkill_name() }</h2>
+              <h3 class = "s-title">Rating = ${v.getRating()} </h3>
+              <h3 class = "s-title">Last updated = ${v.getDate()} </h3>
+              <p class = "s-title">
+	              <a href="#">
+	              	<button>UPDATE</button>
+	              </a>
+	              <a href="#">
+	              	<button>SHOW GRAPH</button>
+	              </a>
+              </p>
               
               
               
@@ -130,7 +141,7 @@
           </div>
         </div>
       
-      </v:foreach>
+      </v:forEach>
       <div class="row">
       
        
