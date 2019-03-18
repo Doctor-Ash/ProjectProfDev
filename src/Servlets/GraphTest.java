@@ -38,10 +38,12 @@ public class GraphTest extends HttpServlet {
 	//	StudentDAO dao = new StudentDAO();
 		HttpSession session =req.getSession(); //used to check whether user is logged in
 		String user = (String) session.getAttribute("username");
+		System.out.println(user);
+		String skillID = (String) req.getParameter("skillID");
 		
 
 		try {
-			skills = skillDAO.getAllSkills(user);
+			skills = skillDAO.getSkill(user,skillID);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

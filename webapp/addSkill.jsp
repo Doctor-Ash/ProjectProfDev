@@ -42,6 +42,8 @@
 </head>
 <body>
 <!--/ Nav Star /-->
+ <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+
   <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
@@ -101,7 +103,7 @@
 
 
 <div class="box2">
-<h1>Insert Skill</h1>
+<center><h1>Insert Skill</h1>
 
 
               
@@ -186,6 +188,7 @@
 	<option value="10">10</option>
 	</select>
 	Description: <input type="text" name="PersonalDevelopmentdescription">
+
 	<br>
 	
 	<!--  <select name="selectSkill">
@@ -216,14 +219,14 @@
 		-->
 		
 		<input type="submit" value="Submit">
-		
+		</center>
 		<!-- form for add -->
 		
 	</form>
               
 </div>
 
-
+</div>
 	
 
 

@@ -32,6 +32,8 @@
 <body id="page-top">
 
   <!--/ Nav Star /-->
+       <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+  
   <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
@@ -78,6 +80,7 @@
 
   <!--/ Section Services Star /-->
   <section id="feature" class="services-mf route">
+  
     <div class="container">
     
      
@@ -87,7 +90,6 @@
       <%
      
       %>
-     
         <div class="col-sm-12">
           <div class="title-box text-center">
             <h3 class="title-a">
@@ -142,7 +144,7 @@
 	              <a href="#">
 	              	<button>UPDATE</button>
 	              </a>
-	              <a href="#">
+	              <a href="./graph?skillID=${v.getSkill_name()}">
 	              	<button>SHOW GRAPH</button>
 	              </a>
               </p>
@@ -162,6 +164,7 @@
       </div><!-- row end -->
       
       
+    </div>
     </div>
   </section>
   <!--/ Section Services End /-->
