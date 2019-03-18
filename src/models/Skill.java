@@ -29,6 +29,17 @@ public class Skill {
 		
 	}
 	
+	public Skill(String skill_name, String description, int rating, String username, String date) {
+		this.skill_name = skill_name;
+		this.description = description;
+		this.rating = rating;
+		this.username = username;
+		this.date = date;
+		
+	}
+	
+	
+	
 
 
 	

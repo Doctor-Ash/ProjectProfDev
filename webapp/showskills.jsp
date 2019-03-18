@@ -75,15 +75,42 @@
   <section id="feature" class="services-mf route">
     <div class="container">
     
+     
     
       <div class="row"><!-- Row start -->
       
-      
+      <%
+     
+      %>
+     
         <div class="col-sm-12">
           <div class="title-box text-center">
             <h3 class="title-a">
               Skills
             </h3>
+            
+            <table align="center" cellpadding="5px" border="solid 1px black">
+			<tr>
+				<th>Name</th>
+				<th>Rating</th>
+				<th>Date</th>
+				
+				
+			</tr>
+			<v:forEach items="${skills}" var="v">
+				<tr>
+					<td>${v.getSkill_name() }</td>
+					<td>${v.getRating() }</td>
+					<td>${v.getDate() }</td>
+					<v:if test="${sesh == true }">
+						<td><button>Delete</button></td>
+					</v:if>
+				</tr>
+			</v:forEach>
+		
+		
+		
+		</table>
             <p class="subtitle-a">
               List of your skills
             </p>
@@ -91,9 +118,9 @@
           </div>
         </div>
       </div>
-      <div class="row">
       
-        <div class="col-md-4">
+      <v:foreach>
+      	<div class="col-md-4">
           <div class="service-box">
             <div class="service-content">
               <h2 class="s-title">Skill 1</h2>
@@ -104,31 +131,11 @@
             </div>
           </div>
         </div>
-        
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-content">
-              <h2 class="s-title">Skill 2</h2>
-              
-              
-              
-              
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-content">
-              <h2 class="s-title">Skill 3</h2>
-              
-              
-              
-              
-            </div>
-          </div>
-        </div>
-        
+      
+      </v:foreach>
+      <div class="row">
+      
+       
         
       </div><!-- row end -->
       

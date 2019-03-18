@@ -2,8 +2,10 @@ package models;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class SkillDAO {
 
@@ -29,6 +31,57 @@ public class SkillDAO {
 			e.printStackTrace();
 		}
 		return dbConnection;
+	}
+	
+	public ArrayList<Skill> getAllSkills(String username) throws SQLException {
+		Connection dbConnection = null;
+		Statement statement= null;
+		ResultSet result = null;
+		String query = "SELECT * FROM skill WHERE username = '" + username + "';";
+		ArrayList<Skill> skills = new ArrayList<>();
+		
+		try 
+		{
+			dbConnection = getDBConnection();
+			statement = dbConnection.createStatement();
+			System.out.println("DBQuery = " + query);
+			result = statement.executeQuery(query);
+			
+			while(result.next())
+			{
+				String skill_name = result.getString("skill_name");
+				String description = result.getString("description");
+				int rating = result.getInt("rating");
+				String date = result.getString("date");
+				
+				skills.add(new Skill
+						(
+						skill_name,
+						description,
+						rating,
+						username,
+						date
+						));
+			}
+		} catch(Exception e)
+		{
+			System.out.println("get all skills: "+e);
+		} finally 
+		{
+			if (result != null) 
+			{
+				result.close();
+			}
+			if (statement != null) 
+			{
+				statement.close();
+			}
+			if (dbConnection != null) 
+			{
+				dbConnection.close();
+			}
+		}
+		return skills;
 	}
 	
 	public boolean insertSkill(Skill in) throws SQLException
