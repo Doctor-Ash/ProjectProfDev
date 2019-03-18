@@ -100,7 +100,7 @@
 
 
 <div class="box2">
-<h1>Insert Unit</h1>
+<center> <h1>Insert Unit</h1>
 
 
 
@@ -247,6 +247,7 @@
 		<!-- form for add -->
 		
 	</form>
+	</center>
 
 </div>	
 
