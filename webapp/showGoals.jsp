@@ -42,6 +42,8 @@ body {
 .timeline {
   position: relative;
   max-width: 1200px;
+  top: 200px;
+  clear: both;
   margin: 0 auto;
 }
 
@@ -81,12 +83,12 @@ body {
 
 /* Place the container to the left */
 .left {
-  left: 0;
+  left: -25%;
 }
 
 /* Place the container to the right */
 .right {
-  left: 50%;
+  left: 25%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -164,14 +166,14 @@ body {
 }
 
 </style>
-<body>
+
 
 
   <!--/ Nav Star /-->
-       <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+       
   
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-    <div class="container">
+    <div class="container" style="width:1200px;">
       <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -228,8 +230,9 @@ body {
     </div>
   </nav>
   <!--/ Nav End /-->
-
-
+<body>
+<div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg); background-repeat: no-repeat;
+  background-attachment: fixed; height:2000px;" >
 <div class="timeline">
   <div class="container left">
     <div class="content">
