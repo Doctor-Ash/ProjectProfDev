@@ -152,7 +152,8 @@
         </div>
       </div>
       
-      
+      <center>
+      <div class = "row">
       <v:forEach items="${last5skills}" var="v">
       
       	<div class="col-md-4" id="skillBoxes" >
@@ -175,16 +176,14 @@
         </div>
       
       </v:forEach>
-      <div class="row">
-      
-       
-        
-      </div><!-- row end -->
+      </center>
+      </div>
+      <!-- row end -->
       
       
     </div>
-    </div>
-  </section>
+    
+  
   <!--/ Section Services End /-->
 
 

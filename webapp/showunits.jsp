@@ -150,6 +150,9 @@
         </div>
       </div>
       
+      
+      <center>
+      <div class = "row">
       <v:forEach items="${units}" var="v">
       
       	<div class="col-md-4" id="skillBoxes" >
@@ -168,7 +171,8 @@
         </div>
       
       </v:forEach>
-      <div class="row">
+      </div>
+      </center>
       
        
         
@@ -177,7 +181,7 @@
       
     </div>
     </div>
-  </section>
+  
   <!--/ Section Services End /-->
 
 
