@@ -41,10 +41,11 @@
 	
 </head>
 <body>
-<!--/ Nav Star /-->
+
  <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
 
-  <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
@@ -85,14 +86,15 @@
 		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
 			</v:if>
 			
-			 <li class="nav-item">
-			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
-			</v:if>
-			</li>
+			
 			<li class="nav-item">
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
+			</v:if>
+			</li>
+			 <li class="nav-item">
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./addGoal">Add Goals</a>
 			</v:if>
 			</li>
             
@@ -104,7 +106,7 @@
       </div>
     </div>
   </nav>
-  <!-- if logged in display the form -->
+  <!--/ Nav End /-->
 
 
 <div class="box2">
