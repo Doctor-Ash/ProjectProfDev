@@ -8,7 +8,7 @@
 	<meta charset="ISO-8859-1" >
 	<meta  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="v" %> >
 	<link rel="stylesheet" href="css/site.css">
-	<title>Professional Development Planner</title>
+	<title>Add Skill</title>
 	
 	  <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -31,10 +31,26 @@
   	clear: both;
   	position: relative;
   	top: 200px;
+  	background-color: black;
+  	filter: alpha(opacity=80);
+    opacity: 0.8;
   }
   
   nav {
   	
+  }
+  
+  .ibox {
+  	height: 50px;
+  	font-size: 12px;
+  }
+  
+  .tarea {
+  	font-size: 12px;
+  }
+  
+  h4 {
+  	color: white;
   }
   
   </style>
@@ -42,7 +58,8 @@
 </head>
 <body>
 
- <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+ <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg); background-repeat: no-repeat;
+  background-attachment: fixed; height:2000px;">
 
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
@@ -86,19 +103,15 @@
 		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
 			</v:if>
 			
-			
+			 
 			<li class="nav-item">
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
 			</v:if>
 			</li>
-			 <li class="nav-item">
-			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./addGoal">Add Goals</a>
-			</v:if>
-			</li>
+			
             
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
           </li>
@@ -116,7 +129,7 @@
               
               <form method = "post"  action="./addSkill">
 	
-	Communication Rating :
+	<h4>Communication Rating :</h4>     
 	<select name="selectCommunicationRating">
 	 <option value="1">1</option>
 	 <option value="2">2</option>
@@ -130,10 +143,12 @@
 	<option value="10">10</option>
 	</select>
 	
-		Description: <input type="text" name="Communicationdescription">
+		Progress notes: <textarea name="Communicationdescription" cols="30" rows="3" class="tarea"></textarea>
+		<!--  <input type="text" class="ibox" name="Communicationdescription">-->
+		
 	<br>
 	
-	Teamwork Rating :
+	<h4>Teamwork Rating :</h4>
 	<select name="selectTeamworkRating">
 	 <option value="1">1</option>
 	 <option value="2">2</option>
@@ -146,10 +161,11 @@
 	<option value="9">9</option>
 	<option value="10">10</option>
 	</select>
-	Description: <input type="text" name="Teamworkdescription">
+	Progress notes: <textarea name="Teamworkdescription" cols="30" rows="3" class="tarea"></textarea>
+	<!--  <input type="text" class="ibox"  name="Teamworkdescription">-->
 	<br>
 	
-		Organisation Rating :
+	<h4>Organisation Rating :</h4>
 	<select name="selectOrganisationRating">
 	 <option value="1">1</option>
 	 <option value="2">2</option>
@@ -162,10 +178,11 @@
 	<option value="9">9</option>
 	<option value="10">10</option>
 	</select>
-	Description: <input type="text" name="selectOrganisationdescription">
+	Progress notes: <textarea name="selectOrganisationdescription" cols="30" rows="3" class="tarea"></textarea>
+	<!--  <input type="text" class="ibox" name="selectOrganisationdescription"> -->
 	<br>
 	
-		Time Management Rating :
+	<h4>Time Management Rating :</h4>
 	<select name="selectTimemanagementRating">
 	 <option value="1">1</option>
 	 <option value="2">2</option>
@@ -178,10 +195,11 @@
 	<option value="9">9</option>
 	<option value="10">10</option>
 	</select>
-	Description: <input type="text" name="Timemanagementdescription">
+	Progress notes: <textarea name="Timemanagementdescription" cols="30" rows="3" class="tarea"></textarea>
+	<!--  <input type="text" class="ibox" name="Timemanagementdescription">-->
 	<br>
 	
-		Personal Development Rating :
+	<h4>Personal Development Rating :</h4>
 	<select name="selectPersonaldevelopmentRating">
 	 <option value="1">1</option>
 	 <option value="2">2</option>
@@ -194,7 +212,8 @@
 	<option value="9">9</option>
 	<option value="10">10</option>
 	</select>
-	Description: <input type="text" name="PersonalDevelopmentdescription">
+	Progress notes: <textarea name="PersonalDevelopmentdescription" cols="30" rows="3" class="tarea"></textarea> 
+	<!--  <input type="text" class="ibox" name="PersonalDevelopmentdescription">-->
 
 	<br>
 	

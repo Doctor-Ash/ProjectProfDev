@@ -4,27 +4,29 @@
 <html>
 
 <head>
+<meta charset="ISO-8859-1" >
+	<meta  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="v" %> >
+	<link rel="stylesheet" href="css/site.css">
 	<title>Professional Development Planner</title>
 	
 	  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+	  <link href="img/favicon.png" rel="icon">
+	  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+	
+	  <!-- Bootstrap CSS File -->
+	  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	  <!-- Libraries CSS Files -->
+	  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	  <link href="lib/animate/animate.min.css" rel="stylesheet">
+	  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+	  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+	
+	  <!-- Main Stylesheet File -->
+	  <link href="css/style.css" rel="stylesheet">
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-<meta charset="ISO-8859-1">
-
-<title>Insert title here</title>
+<title>Show Goals</title>
 </head>
 <style>
 * {
@@ -41,6 +43,8 @@ body {
 .timeline {
   position: relative;
   max-width: 1200px;
+  top: 200px;
+  clear: both;
   margin: 0 auto;
 }
 
@@ -80,12 +84,12 @@ body {
 
 /* Place the container to the left */
 .left {
-  left: 0;
+  left: -25%;
 }
 
 /* Place the container to the right */
 .right {
-  left: 50%;
+  left: 25%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -163,13 +167,14 @@ body {
 }
 
 </style>
-<body>
+
 
 
   <!--/ Nav Star /-->
+       
   
-  <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
-    <div class="container">
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container" style="width:1200px;">
       <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -182,27 +187,42 @@ body {
           <li class="nav-item">
             <a class="nav-link js-scroll active" href="./home">Home</a>
           </li>
-           <li class="nav-item">
-            <a class="nav-link js-scroll active" href="./logout">Log out</a>
+          <li class="nav-item">
+	          <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./logout">Log out</a>
+			  </v:if>
+				
+			  <v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./login">Log in</a>
+			  </v:if>
           </li>
           <li class="nav-item">
             <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showunits">Show Units</a>
 			</v:if>
+          	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="#feature">Features</a>
+			</v:if>
+          
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="./showskills">Show Skills</a>
-          </li>
-           <li class="nav-item">
-			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
+          	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./create">Create account</a>
 			</v:if>
-			</li>
+			
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
+			</v:if>
+			
+			 
 			<li class="nav-item">
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
 			</v:if>
 			</li>
+			
+            
+          
           <li class="nav-item">
             <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
           </li>
@@ -211,12 +231,9 @@ body {
     </div>
   </nav>
   <!--/ Nav End /-->
-
-<br>
-<br>
-<br>
-<br>
-<br>
+<body>
+<div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg); background-repeat: no-repeat;
+  background-attachment: fixed; height:2000px;" >
 <div class="timeline">
   <div class="container left">
     <div class="content">
@@ -226,7 +243,7 @@ body {
   </div>
   <div class="container right">
     <div class="content">
-      <h2>Febuaray Goals</h2>
+      <h2>February Goals</h2>
       <p>Lorem ipsum..</p>
     </div>
   </div>
@@ -293,6 +310,26 @@ body {
   
   </div>
 </div>
+
+ <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 
 </body>
 </html>

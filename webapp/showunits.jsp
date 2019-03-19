@@ -32,7 +32,8 @@
 <body id="page-top">
 
   
-  <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+  <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg); background-repeat: no-repeat;
+  background-attachment: fixed; height:2000px;">
   
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
@@ -59,7 +60,9 @@
 			  </v:if>
           </li>
           <li class="nav-item">
-           
+            <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./showunits">Show Units</a>
+			</v:if>
           	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
 		      	<a class="nav-link js-scroll" href="#feature">Features</a>
 			</v:if>
@@ -74,23 +77,15 @@
 		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
 			</v:if>
 			
-			 <li class="nav-item">
-			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
-			</v:if>
-			</li>
+			 
 			<li class="nav-item">
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
 			</v:if>
 			</li>
-			 <li class="nav-item">
-			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./addGoal">Add Goals</a>
-			</v:if>
-			</li>
+			
             
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
           </li>
@@ -123,7 +118,7 @@
               Units
             </h3>
             
-            <table align="center" cellpadding="5px" border="1px solid black">
+            <table align="center" style="background-color: black; opacity: 0.75;">
 			<tr>
 				<th>Unit Name</th>
 				<th>Grade</th>
@@ -143,7 +138,7 @@
 		
 		
 		</table>
-            <p class="subtitle-a">
+            <p class="subtitle-a" style="color: white;">
               List of your Units
             </p>
             <div class="">
@@ -155,6 +150,9 @@
         </div>
       </div>
       
+      
+      <center>
+      <div class = "row">
       <v:forEach items="${units}" var="v">
       
       	<div class="col-md-4" id="skillBoxes" >
@@ -163,7 +161,7 @@
               <h2 class="s-title">${v.getUnit_name() }</h2>
               <h3 class = "s-title">Grade = ${v.getGrade()} </h3>
               <p class = "s-title">
-	              <a href="#">
+	              <a href="./deleteUnit?unitName=${v.getUnit_name()}">
 	              	<button>DELETE</button>
 	              </a>
               </p>
@@ -173,7 +171,8 @@
         </div>
       
       </v:forEach>
-      <div class="row">
+      </div>
+      </center>
       
        
         
@@ -182,7 +181,7 @@
       
     </div>
     </div>
-  </section>
+  
   <!--/ Section Services End /-->
 
 

@@ -21,8 +21,8 @@ public class Controller {
 		classlist.addBefore("org.eclipse.jetty.webapp.JettyWebXmlConfiguration",
 				"org.eclipse.jetty.annotations.AnnotationConfiguration");
 
-		//mappings
-
+		//mappings to servlets
+		
 		ctx.addServlet("Servlets.LoginServlet", "/login");
 		ctx.addServlet("Servlets.LogoutServlet", "/logout");
 		ctx.addServlet("Servlets.AddSkillServlet", "/addSkill");
@@ -33,6 +33,7 @@ public class Controller {
 		ctx.addServlet("Servlets.AddUnitServlet", "/addUnit");
 		ctx.addServlet("Servlets.AddGoalServlet", "/addGoal");
 		ctx.addServlet("Servlets.ShowGoalServlet", "/showGoals");
+		ctx.addServlet("Servlets.DeleteUnitServlet", "/deleteUnit");
 		//ctx.addServlet("Servlets.loggedIn", "/loggedIn");
 		
 		ctx.addServlet("Servlets.ServletHome","/home");

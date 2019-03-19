@@ -31,7 +31,8 @@
 
 <body id="page-top">
 
-       <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+       <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg); background-repeat: no-repeat;
+  background-attachment: fixed; height:2400px;">
   
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
@@ -71,24 +72,19 @@
 		      	<a class="nav-link js-scroll" href="./create">Create account</a>
 			</v:if>
 			
-			
-			 <li class="nav-item">
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
+		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
 			</v:if>
-			</li>
+			
+			 
 			<li class="nav-item">
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
 			</v:if>
 			</li>
-			 <li class="nav-item">
-			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./addGoal">Add Goals</a>
-			</v:if>
-			</li>
+			
             
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
           </li>
@@ -121,7 +117,7 @@
               Skills
             </h3>
             
-            <table align="center" cellpadding="5px" border="1px solid black">
+            <table align="center" style="background-color: black; opacity: 0.75;">
 			<tr>
 				<th>Name</th>
 				<th>Rating</th>
@@ -129,7 +125,7 @@
 				
 				
 			</tr>
-			<v:forEach items="${skills}" var="v">
+			<v:forEach items="${last5skills}" var="v">
 				<tr>
 					<td>${v.getSkill_name() }</td>
 					<td>${v.getRating() }</td>
@@ -143,12 +139,12 @@
 		
 		
 		</table>
-            <p class="subtitle-a">
-              List of your skills
+            <p class="subtitle-a" style="color: white;">
+              List of most recent skills
             </p>
             <div class="">
 	            <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-			    	<a class="nav-link js-scroll" href="./addSkill"><button>Add Skills</button></a>
+			    	<a class="nav-link js-scroll" href="./addSkill"><button>Add/Update Skills</button></a>
 				</v:if>
 			</div>
           </div>
@@ -156,8 +152,9 @@
         </div>
       </div>
       
-      
-      <v:forEach items="${skills}" var="v">
+      <center>
+      <div class = "row">
+      <v:forEach items="${last5skills}" var="v">
       
       	<div class="col-md-4" id="skillBoxes" >
           <div class="service-box">
@@ -166,9 +163,6 @@
               <h3 class = "s-title">Rating = ${v.getRating()} </h3>
               <h3 class = "s-title">Last updated = ${v.getDate()} </h3>
               <p class = "s-title">
-	              <a href="#">
-	              	<button>UPDATE</button>
-	              </a>
 	              <a href="./graph?skillName=${v.getSkill_name()}">
 	              	<button>SHOW GRAPH</button>
 	              </a>
@@ -182,16 +176,14 @@
         </div>
       
       </v:forEach>
-      <div class="row">
-      
-       
-        
-      </div><!-- row end -->
+      </center>
+      </div>
+      <!-- row end -->
       
       
     </div>
-    </div>
-  </section>
+    
+  
   <!--/ Section Services End /-->
 
 

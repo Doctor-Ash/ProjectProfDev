@@ -8,7 +8,7 @@
 	<meta charset="ISO-8859-1" >
 	<meta  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="v" %> >
 	<link rel="stylesheet" href="css/site.css">
-	<title>Professional Development Planner</title>
+	<title>Contact</title>
 	
 	  <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -73,23 +73,18 @@
 		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
 			</v:if>
 			
-			 <li class="nav-item">
-			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
-			</v:if>
-			</li>
+			 
 			<li class="nav-item">
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
 			</v:if>
 			</li>
-			 <li class="nav-item">
-			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./addGoal">Add Goals</a>
-			</v:if>
-			</li>
+			
             
-         
+          
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
+          </li>
         </ul>
       </div>
     </div>

@@ -69,13 +69,13 @@ public class UnitDAO {
 		return ok;
 	}
 	
-	public boolean deleteUnit(int unit_id) throws SQLException
+	public boolean deleteUnit(String unit_name, String username) throws SQLException
 	{
-		System.out.println("Deleting unit with id = " + unit_id);
+		System.out.println("Deleting unit with name = " + unit_name);
 		Connection dbConnection = null;
 		Statement statement = null;
 		int result = 0;
-		String query = "DELETE FROM unit WHERE unit_id = " + unit_id + ";";
+		String query = "DELETE FROM unit WHERE unit_name = '" + unit_name + "' AND username = '" + username + "'";
 		try {
 			dbConnection= getDBConnection();
 			statement = dbConnection.createStatement();
@@ -101,6 +101,7 @@ public class UnitDAO {
 			return false;
 		}
 	}
+	
 	public ArrayList<Unit> getAllUnits(String username) throws SQLException {
 		Connection dbConnection = null;
 		Statement statement= null;
