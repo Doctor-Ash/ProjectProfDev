@@ -39,6 +39,10 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+p {
+color: black;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -220,6 +224,11 @@ body {
 		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
 			</v:if>
 			</li>
+			<li class="nav-item">
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./addGoal">Add Goals</a>
+			</v:if>
+			</li>
 			
             
           
@@ -238,78 +247,80 @@ body {
   <div class="container left">
     <div class="content">
       <h2>January Goals</h2>
-      <p>Lorem ipsum..</p>
+      
+     <p name="jan"> <%=request.getAttribute("jan")%></p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
       <h2>February Goals</h2>
-      <p>Lorem ipsum..</p>
+       <p name="feb"> <%=request.getAttribute("feb")%></p>
     </div>
   </div>
     <div class="container left">
     <div class="content">
       <h2>March Goals</h2>
-      <p>Lorem ipsum..</p>
+       <p name="mar"> <%=request.getAttribute("mar")%></p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
       <h2>April Goals</h2>
-      <p>Lorem ipsum..</p>
+      <p name="apr"> <%=request.getAttribute("apr")%></p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
       <h2>May Goals</h2>
-      <p>Lorem ipsum..</p>
+       <p name="may"> <%=request.getAttribute("may")%></p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
       <h2>June Goals</h2>
-      <p>Lorem ipsum..</p>
+       <p name="jun"> <%=request.getAttribute("jun")%></p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
       <h2>July Goals</h2>
-      <p>Lorem ipsum..</p>
+       <p name="jul"> <%=request.getAttribute("jul")%></p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
       <h2>August Goals</h2>
-      <p>Lorem ipsum..</p>
+       <p name="aug"> <%=request.getAttribute("aug")%></p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
       <h2>Septemeber Goals</h2>
-      <p>Lorem ipsum..</p>
+       <p name="sep"> <%=request.getAttribute("sep")%></p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
       <h2>October Goals</h2>
-      <p>Lorem ipsum..</p>
+       <p name="oct"> <%=request.getAttribute("oct")%></p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
       <h2>November Goals</h2>
-      <p>Lorem ipsum..</p>
+      <p name="nov"> <%=request.getAttribute("nov")%></p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
       <h2>December Goals</h2>
-      <p>Lorem ipsum..</p>
+      <p name="dec"> <%=request.getAttribute("dec")%></p>
     </div>
   </div>
   
   </div>
 </div>
+
 
  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>

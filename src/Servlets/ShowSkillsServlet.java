@@ -15,6 +15,13 @@ import models.Skill;
 import models.SkillDAO;
 import models.StudentDAO;
 
+/**
+* This is to get all the skills from the Database using the dao and load the jsp page with them values in.
+* @author  Lewis, Callum, Josh, Alexander
+* @version 1.0
+* @since   19/3/2019
+*/
+
 public class ShowSkillsServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1l;
@@ -23,6 +30,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 		
 		StudentDAO dao = new StudentDAO();
 		SkillDAO skillDAO = new SkillDAO();
+		
 		ArrayList<Skill> skills = new ArrayList<>();
 		ArrayList<Skill> last5skills = new ArrayList<>();
 		

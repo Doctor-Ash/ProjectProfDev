@@ -7,6 +7,15 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+/**
+* Skill DAO this is for interacting with the database and is used to make connections such as getting all the data of skills of a specific user.
+* Also used to insert/delete/update skills into the database 
+* Also used to get information from the database
+*
+* @author  Lewis, Callum, Josh, Alexander
+* @version 1.0
+* @since   19/3/2019
+*/
 public class SkillDAO {
 
 	private static Connection getDBConnection() 
