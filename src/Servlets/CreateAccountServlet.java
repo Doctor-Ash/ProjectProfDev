@@ -51,7 +51,7 @@ public class CreateAccountServlet extends HttpServlet  {
 			System.out.println(done);
 			System.out.println(s);
 			if(done) {
-				resp.sendRedirect("loggedIn");
+				resp.sendRedirect("index.jsp");
 			}}
 			catch (SQLException e) {
 				e.printStackTrace();
