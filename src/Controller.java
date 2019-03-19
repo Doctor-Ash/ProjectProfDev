@@ -21,8 +21,8 @@ public class Controller {
 		classlist.addBefore("org.eclipse.jetty.webapp.JettyWebXmlConfiguration",
 				"org.eclipse.jetty.annotations.AnnotationConfiguration");
 
-		//mappings
-
+		//mappings to servlets
+		
 		ctx.addServlet("Servlets.LoginServlet", "/login");
 		ctx.addServlet("Servlets.LogoutServlet", "/logout");
 		ctx.addServlet("Servlets.AddSkillServlet", "/addSkill");
