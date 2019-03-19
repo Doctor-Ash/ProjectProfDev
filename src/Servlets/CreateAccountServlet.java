@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import models.GoalDAO;
 import models.Skill;
 import models.SkillDAO;
 import models.Student;
@@ -30,6 +31,7 @@ public class CreateAccountServlet extends HttpServlet  {
 	{
 			
 			StudentDAO dao = new StudentDAO();
+			GoalDAO goalsdao = new GoalDAO();
 			
 		
 		String firstName = (String) req.getParameter("firstName");
@@ -51,6 +53,7 @@ public class CreateAccountServlet extends HttpServlet  {
 			System.out.println(done);
 			System.out.println(s);
 			if(done) {
+				goalsdao.insertNew(username);
 				resp.sendRedirect("index.jsp");
 			}}
 			catch (SQLException e) {

@@ -34,15 +34,13 @@ public class GoalDAO {
 	}
 	
 	
-	
-	
-	
-	public boolean insertGoal(String month, String username, String goal) throws SQLException
+	public boolean insertNew(String username) throws SQLException
 	{
 		Connection dbConnection = null;
 		Statement statement= null;
-		
-		String update = "UPDATE goals Set " + month +" = '" + goal + "';" ;
+		String set = "No Goals Set";
+		String update = "insert INTO goals (Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec, username) "
+				+ "Values ('" + set + "' , '" + set + "' , '" + set + "' , '" + set + "' , '" + set + "' , '" + set + "' , '" + set + "' , '" + set + "' , '" + set + "' , '" + set + "' , '" + set + "' , '" + set + "' , '" + username + "');" ;
 				
 		boolean ok = false;
 		
@@ -71,20 +69,29 @@ public class GoalDAO {
 		return ok;
 	}
 	
-	public boolean deleteSkill(int skill_id) throws SQLException
+	
+	
+	public boolean insertGoal(String month, String username, String goal) throws SQLException
 	{
-		System.out.println("Deleting skill with id = " + skill_id);
 		Connection dbConnection = null;
-		Statement statement = null;
-		int result = 0;
-		String query = "DELETE FROM skill WHERE skill_id = " + skill_id + ";";
-		try {
-			dbConnection= getDBConnection();
+		Statement statement= null;
+		
+		String update = "UPDATE goals Set " + month +" = '" + goal + "' WHERE username = '" + username  + "';" ;
+				
+		boolean ok = false;
+		
+		try 
+		{
+			dbConnection = getDBConnection();
 			statement = dbConnection.createStatement();
-			System.out.println(query);
+			System.out.println(update);
 			
-			result = statement.executeUpdate(query);
-		} finally
+			statement.executeUpdate(update);
+			ok = true;
+		} catch(Exception e)
+		{
+			e.printStackTrace();
+		} finally 
 		{
 			if (statement != null) 
 			{
@@ -95,30 +102,52 @@ public class GoalDAO {
 				dbConnection.close();
 			}
 		}
-		if (result == 1)
-		{
-			return true;
-		} else 
-		{
-			return false;
-		}
+		return ok;
 	}
 	
 	
-	public Boolean updateSkill(Skill up, int skill_id) throws SQLException {
-		System.out.println(" Updating skill with id = " + skill_id);
+	public Goal getGoals(String username) throws SQLException {
 		Connection dbConnection = null;
-		Statement statement = null;
-		int result = 0;
-		String query = "UPDATE skill  = " + skill_id + ";";
-		try {
-			dbConnection= getDBConnection();
-			statement = dbConnection.createStatement();
-			System.out.println(query);
-			
-			result = statement.executeUpdate(query);
-		} finally
+		Statement statement= null;
+		ResultSet result = null;
+		String query = "SELECT * FROM goals WHERE username = '" + username + "';";
+		ArrayList<Unit> units = new ArrayList<>();
+		Goal g1 = null;
+		try 
 		{
+			dbConnection = getDBConnection();
+			statement = dbConnection.createStatement();
+			System.out.println("DBQuery = " + query);
+			result = statement.executeQuery(query);
+			
+			String jan = result.getString("Jan");
+			String feb = result.getString("Feb");
+			String mar = result.getString("Mar");
+			String apr = result.getString("Apr");
+			String may = result.getString("May");
+			String jun = result.getString("Jun");
+			String jul = result.getString("Jul");
+			String aug = result.getString("Aug");
+			String sep = result.getString("Sep");
+			String oct = result.getString("Oct");
+			String nov = result.getString("Nov");
+			String dec = result.getString("Dec");
+			
+				
+			
+				
+				g1 = new Goal(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec, username);
+				
+			
+		} catch(Exception e)
+		{
+			System.out.println("get all units: "+e);
+		} finally 
+		{
+			if (result != null) 
+			{
+				result.close();
+			}
 			if (statement != null) 
 			{
 				statement.close();
@@ -128,13 +157,9 @@ public class GoalDAO {
 				dbConnection.close();
 			}
 		}
-		if (result == 1)
-		{
-			return true;
-		} else 
-		{
-			return false;
-		}
+		return g1;
 	}
+	
+	
 	
 }

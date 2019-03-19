@@ -23,6 +23,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 		
 		StudentDAO dao = new StudentDAO();
 		SkillDAO skillDAO = new SkillDAO();
+		
 		ArrayList<Skill> skills = new ArrayList<>();
 		ArrayList<Skill> last5skills = new ArrayList<>();
 		
