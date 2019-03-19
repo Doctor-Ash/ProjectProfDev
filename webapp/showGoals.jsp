@@ -3,6 +3,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Professional Development Planner</title>
+	
+	  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
@@ -144,6 +162,56 @@ body {
 
 </style>
 <body>
+
+
+  <!--/ Nav Star /-->
+       <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+  
+  <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="./home">Home</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll active" href="./logout">Log out</a>
+          </li>
+          <li class="nav-item">
+            <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./showunits">Show Units</a>
+			</v:if>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="./showskills">Show Skills</a>
+          </li>
+           <li class="nav-item">
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
+			</v:if>
+			</li>
+			<li class="nav-item">
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
+			</v:if>
+			</li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+
 <div class="timeline">
   <div class="container left">
     <div class="content">
