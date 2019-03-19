@@ -117,7 +117,7 @@
               Skills
             </h3>
             
-            <table align="center" cellpadding="5px" border="1px solid black">
+            <table align="center" style="background-color: black; opacity: 0.75;">
 			<tr>
 				<th>Name</th>
 				<th>Rating</th>
