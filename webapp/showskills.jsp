@@ -31,10 +31,10 @@
 
 <body id="page-top">
 
-  <!--/ Nav Star /-->
        <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
   
-  <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
@@ -48,18 +48,31 @@
           <li class="nav-item">
             <a class="nav-link js-scroll active" href="./home">Home</a>
           </li>
-           <li class="nav-item">
-            <a class="nav-link js-scroll active" href="./logout">Log out</a>
+          <li class="nav-item">
+	          <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./logout">Log out</a>
+			  </v:if>
+				
+			  <v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./login">Log in</a>
+			  </v:if>
           </li>
           <li class="nav-item">
             <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showunits">Show Units</a>
 			</v:if>
+          	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="#feature">Features</a>
+			</v:if>
+          
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="./showskills">Show Skills</a>
-          </li>
-           <li class="nav-item">
+          	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="./create">Create account</a>
+			</v:if>
+			
+			
+			 <li class="nav-item">
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
 			</v:if>
@@ -69,6 +82,13 @@
 		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
 			</v:if>
 			</li>
+			 <li class="nav-item">
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./addGoal">Add Goals</a>
+			</v:if>
+			</li>
+            
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
           </li>
