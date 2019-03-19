@@ -36,7 +36,7 @@ public class DeleteUnitServlet extends HttpServlet  {
 		
 		
 	
-		resp.sendRedirect("showunits.jsp");
+		resp.sendRedirect("./showunits");
 	}
 
 

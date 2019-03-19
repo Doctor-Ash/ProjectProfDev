@@ -31,7 +31,8 @@
 
 <body id="page-top">
 
-       <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+       <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg); background-repeat: no-repeat;
+  background-attachment: fixed; height:2400px;">
   
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
