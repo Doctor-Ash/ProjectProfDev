@@ -167,7 +167,6 @@ body {
 
 
   <!--/ Nav Star /-->
-       <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
   
   <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
@@ -213,7 +212,11 @@ body {
   </nav>
   <!--/ Nav End /-->
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
 <div class="timeline">
   <div class="container left">
     <div class="content">
