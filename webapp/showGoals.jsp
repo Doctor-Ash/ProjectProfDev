@@ -242,7 +242,7 @@ body {
   </div>
   <div class="container right">
     <div class="content">
-      <h2>Febuaray Goals</h2>
+      <h2>February Goals</h2>
       <p>Lorem ipsum..</p>
     </div>
   </div>
