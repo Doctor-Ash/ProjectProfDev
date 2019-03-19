@@ -24,6 +24,8 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 		StudentDAO dao = new StudentDAO();
 		SkillDAO skillDAO = new SkillDAO();
 		ArrayList<Skill> skills = new ArrayList<>();
+		ArrayList<Skill> last5skills = new ArrayList<>();
+		
 		
 		HttpSession session =req.getSession(); //used to check whether user is logged in
 		String user = (String) session.getAttribute("username");
@@ -37,7 +39,14 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 		
 		req.setAttribute("skills", skills);
 		
+		
+		for(int i = 1; i <= 5; i++) {
+			last5skills.add(skills.get(skills.size()-i));
+		}
 	
+		req.setAttribute("last5skills", last5skills);
+		
+		
 		RequestDispatcher view = req.getRequestDispatcher("showskills.jsp");
 		//req.setAttribute("",);
 		view.forward(req, resp);

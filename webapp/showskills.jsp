@@ -124,7 +124,7 @@
 				
 				
 			</tr>
-			<v:forEach items="${skills}" var="v">
+			<v:forEach items="${last5skills}" var="v">
 				<tr>
 					<td>${v.getSkill_name() }</td>
 					<td>${v.getRating() }</td>
@@ -138,8 +138,8 @@
 		
 		
 		</table>
-            <p class="subtitle-a">
-              List of your skills
+            <p class="subtitle-a" style="color: white;">
+              List of most recent skills
             </p>
             <div class="">
 	            <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
@@ -152,7 +152,7 @@
       </div>
       
       
-      <v:forEach items="${skills}" var="v">
+      <v:forEach items="${last5skills}" var="v">
       
       	<div class="col-md-4" id="skillBoxes" >
           <div class="service-box">
