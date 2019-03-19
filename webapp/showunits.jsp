@@ -64,8 +64,13 @@
 		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
 			</v:if>
 			</li>
+			<li class="nav-item">
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
+			</v:if>
+			</li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contact</a>
+            <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
           </li>
         </ul>
       </div>

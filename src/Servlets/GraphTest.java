@@ -32,24 +32,26 @@ public class GraphTest extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		
-		StudentDAO dao = new StudentDAO();
+		
 		SkillDAO skillDAO = new SkillDAO();
-		ArrayList<Skill> skills = new ArrayList<>();
-	//	StudentDAO dao = new StudentDAO();
+		ArrayList<Skill> ratings = new ArrayList<>();
+		
 		HttpSession session =req.getSession(); //used to check whether user is logged in
 		String user = (String) session.getAttribute("username");
 		System.out.println(user);
-		String skillID = (String) req.getParameter("skillID");
+		String skillName= (String) req.getParameter("skillName");
+		System.out.println(skillName);
 		
 
 		try {
-			skills = skillDAO.getSkill(user,skillID);
+			ratings = skillDAO.getParticularSkills(user, skillName);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		req.setAttribute("skills", skills);
+		req.setAttribute("ratings", ratings);
+		session.setAttribute("skillName", skillName);
 		
 		
 		RequestDispatcher view = req.getRequestDispatcher("Graphs test.jsp");

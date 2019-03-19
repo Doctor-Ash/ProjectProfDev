@@ -64,8 +64,13 @@
 		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
 			</v:if>
 			</li>
+			<li class="nav-item">
+			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
+		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
+			</v:if>
+			</li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contact</a>
+            <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
           </li>
         </ul>
       </div>
@@ -137,14 +142,14 @@
       	<div class="col-md-4" id="skillBoxes" >
           <div class="service-box">
             <div class="service-content">
-              <h2 class="s-title">${v.getSkill_name() }</h2>
+              <h2 class="s-title" >${v.getSkill_name() }</h2>
               <h3 class = "s-title">Rating = ${v.getRating()} </h3>
               <h3 class = "s-title">Last updated = ${v.getDate()} </h3>
               <p class = "s-title">
 	              <a href="#">
 	              	<button>UPDATE</button>
 	              </a>
-	              <a href="./graph?skillID=${v.getSkill_name()}">
+	              <a href="./graph?skillName=${v.getSkill_name()}">
 	              	<button>SHOW GRAPH</button>
 	              </a>
               </p>

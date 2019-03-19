@@ -83,7 +83,7 @@ public class SkillDAO {
 		}
 		return skills;
 	}
-	 public ArrayList<Skill> getSkill(String username,String skillPass) throws SQLException  
+	 public ArrayList<Skill> getParticularSkills(String username, String skillName) throws SQLException  
 	{
 		Connection dbConnection = null;
 		Statement statement = null;
@@ -92,7 +92,7 @@ public class SkillDAO {
 
 		
 		//gets a individual vehicle
-		String query = "SELECT rating, date FROM skill WHERE username = '" + username + "' AND skill_name = '" + skillPass + "';";
+		String query = "SELECT rating, date FROM skill WHERE username = '" + username + "' AND skill_name = '" + skillName + "';";
 
 		try {
 			dbConnection = getDBConnection();
@@ -109,6 +109,7 @@ public class SkillDAO {
 
 				ratings.add(new Skill
 						(
+						skillName,
 						rating,
 						date
 						));

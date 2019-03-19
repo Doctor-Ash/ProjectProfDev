@@ -37,8 +37,9 @@ public class Skill {
 		this.date = date;
 		
 	}
-	public Skill(int rating, String date) {
+	public Skill(String skillName, int rating, String date) {
 	
+		this.skill_name = skillName;
 		this.rating = rating;
 		this.date = date;
 		

@@ -12,8 +12,8 @@ public class TestController {
 
 	public static void main(String[] args) {
 		
-		StudentDAO studentDao = new StudentDAO();
-		SkillDAO skillDao = new SkillDAO();
+		StudentDAO studentDAO = new StudentDAO();
+		SkillDAO skillDAO = new SkillDAO();
 		UnitDAO unitDAO = new UnitDAO();
 		ArrayList<Skill> allSkills = new ArrayList<Skill>();
 		ArrayList<Unit> allUnits = new ArrayList<Unit>();
@@ -75,11 +75,11 @@ public class TestController {
 		*/
 		
 		//####################UNIT INSERT TEST####################### PASSED 18/03 LF
-		try {
+		/*try {
 			unitDAO.insertUnit(advProg);
 		} catch(SQLException e) {
 			e.printStackTrace();
-		}
+		}*/
 		
 		//########################UNIT DELETE TEST###################### PASSED 18/03 LF
 		/*try {
@@ -93,6 +93,16 @@ public class TestController {
 			allUnits = unitDAO.getAllUnits(lewis.getUsername());
 			for(Unit u : allUnits) {
 				System.out.println(u.getUnit_name());
+			}
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}*/
+		
+		//#######################retrieve all skills of same name#################### PASSED 19/03 LF
+		/*try {
+			allSkills = skillDAO.getParticularSkills(lewis.getUsername(), "Communication");
+			for(Skill s : allSkills) {
+				System.out.println("Skill = "+s.getSkill_name() + "\nRating = "+s.getRating() + "\nDate = " + s.getDate());
 			}
 		} catch(SQLException e) {
 			e.printStackTrace();
