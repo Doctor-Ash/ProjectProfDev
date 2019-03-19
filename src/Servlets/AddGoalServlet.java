@@ -23,7 +23,7 @@ public class AddGoalServlet extends HttpServlet  {
 	
 	protected void doGet( HttpServletRequest req, HttpServletResponse resp ) throws ServletException,IOException
 	{
-		RequestDispatcher view =req.getRequestDispatcher("addSkill.jsp");
+		RequestDispatcher view =req.getRequestDispatcher("addGoal.jsp");
 		view.forward(req,resp);
 	}
 
