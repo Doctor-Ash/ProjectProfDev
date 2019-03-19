@@ -45,26 +45,13 @@
 	          <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		      	<a class="nav-link js-scroll" href="./logout">Log out</a>
 			  </v:if>
-				
-			  <v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
-		      	<a class="nav-link js-scroll" href="./login">Log in</a>
-			  </v:if>
           </li>
           
            <li class="nav-item">
             <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showunits">Show Units</a>
 			</v:if>
-          	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
-		      	<a class="nav-link js-scroll" href="#feature">Features</a>
-			</v:if>
-          
-          </li>
-          <li class="nav-item">
-          	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
-		      	<a class="nav-link js-scroll" href="./create">Create account</a>
-			</v:if>
-			
+   
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
 			</v:if>
