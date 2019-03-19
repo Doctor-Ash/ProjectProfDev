@@ -30,6 +30,13 @@ public class Goal {
 		this.dec = dec;
 		this.username = username;
 	}
+	
+	public Goal(String month, String username)
+	{
+		
+		this.username = username;
+		
+	}
 	public String getJan() {
 		return jan;
 	}

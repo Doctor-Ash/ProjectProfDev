@@ -106,33 +106,22 @@
 
               
               <form method = "post"  action="./addGoal">
+	Select Month
+	<select name="selectMonth">
+	 <option value="jan">January</option>
+	 <option value="feb">February</option>
+	<option value="mar">March</option>
+	<option value="apr">April</option>
+	<option value="may">May</option>
+	<option value="jun">June</option>
+	<option value="jul">July</option>
+	<option value="aug">August</option>
+	<option value="sep">September</option>
+	<option value="oct">October</option>
+	<option value="nov">November</option>
+	<option value="dec">December</option>
 	
-	January Goals <input type="text" name="janGoals">
-	<br>
-	February Goals <input type="text" name="febGoals">
-	<br>
-	March Goals <input type="text" name="marGoals">
-	<br>
-	April Goals <input type="text" name="aprGoals">
-	<br>
-	March Goals <input type="text" name="marGoals">
-	<br>
-	May Goals <input type="text" name="mayGoals">
-	<br>
-	June Goals <input type="text" name="junGoals">
-	<br>
-	July Goals <input type="text" name="julGoals">
-	<br>
-	August Goals <input type="text" name="augGoals">
-	<br>
-	September Goals <input type="text" name="sepGoals">
-	<br>
-	October Goals <input type="text" name="octGoals">
-	<br>
-	November Goals <input type="text" name="novGoals">
-	<br>
-	December Goals <input type="text" name="decGoals">
-	
+	Goal <input type="text" name="GoalDescription">
 		
 		<input type="submit" value="Submit">
 		
