@@ -19,46 +19,26 @@ public class DeleteUnitServlet extends HttpServlet  {
 	
 	protected void doGet( HttpServletRequest req, HttpServletResponse resp ) throws ServletException,IOException
 	{
-		RequestDispatcher view =req.getRequestDispatcher("showunits.jsp");
-		view.forward(req,resp);
+		
+		UnitDAO unitDAO = new UnitDAO();
+		HttpSession session =req.getSession(); //used to check whether user is logged in
+		String user = (String) session.getAttribute("username");
+		
+		String unitName = req.getParameter("unitName");
+		
+		
+		try {
+			unitDAO.deleteUnit(unitName, user);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	
+		resp.sendRedirect("showunits.jsp");
 	}
 
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
-	{
-			
-			UnitDAO unitDAO = new UnitDAO();
-			HttpSession session =req.getSession(); //used to check whether user is logged in
-			String user = (String) session.getAttribute("username");
-			
-			String unitName = req.getParameter("unitName");
-			
-			
-			try {
-				unitDAO.deleteUnit(unitName, user);
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-			
-		
-			resp.sendRedirect("showunits.jsp");
-			
-			
-			
-			
-			//int rating = (Integer.parseInt(req.getParameter("selectRating")));
-			//String description = req.getParameter("description");
-			//System.out.println(rating + description + skill + user);
-			
-			//Skill s = new Skill(skill, description, rating, user);
-			
-			
-		
-				
-		
-		
-		
-	}
+
 }
 

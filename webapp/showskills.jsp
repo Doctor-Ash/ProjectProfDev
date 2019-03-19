@@ -143,7 +143,7 @@
             </p>
             <div class="">
 	            <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-			    	<a class="nav-link js-scroll" href="./addSkill"><button>Add Skills</button></a>
+			    	<a class="nav-link js-scroll" href="./addSkill"><button>Add/Update Skills</button></a>
 				</v:if>
 			</div>
           </div>
@@ -161,9 +161,6 @@
               <h3 class = "s-title">Rating = ${v.getRating()} </h3>
               <h3 class = "s-title">Last updated = ${v.getDate()} </h3>
               <p class = "s-title">
-	              <a href="#">
-	              	<button>UPDATE</button>
-	              </a>
 	              <a href="./graph?skillName=${v.getSkill_name()}">
 	              	<button>SHOW GRAPH</button>
 	              </a>
