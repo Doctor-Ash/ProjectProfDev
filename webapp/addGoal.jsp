@@ -8,7 +8,7 @@
 	<meta charset="ISO-8859-1" >
 	<meta  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="v" %> >
 	<link rel="stylesheet" href="css/site.css">
-	<title>Professional Development Planner</title>
+	<title>Add Goal</title>
 	
 	  <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -42,7 +42,7 @@
 </head>
 <body>
 <!--/ Nav Star /-->
-  <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
@@ -83,13 +83,15 @@
 		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
 			</v:if>
 			
-			 <li class="nav-item">
+			 
+			<li class="nav-item">
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
+		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
 			</v:if>
 			</li>
+			
             
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
           </li>

@@ -8,7 +8,7 @@
 	<meta charset="ISO-8859-1" >
 	<meta  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="v" %> >
 	<link rel="stylesheet" href="css/style2.css">
-	<title>login</title>
+	<title>Create Account</title>
 	
 
   <!-- Main Stylesheet File -->
@@ -54,6 +54,9 @@
             <v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
 		    	<a class="nav-link js-scroll" href="./showunits">Show Units</a>
 			</v:if>
+          	<v:if test="${session == false }"> <!-- if user is logged in display add new and logout  -->
+		      	<a class="nav-link js-scroll" href="#feature">Features</a>
+			</v:if>
           
           </li>
           <li class="nav-item">
@@ -65,12 +68,15 @@
 		    	<a class="nav-link js-scroll" href="./showskills">Show Skills</a>
 			</v:if>
 			
-			 <li class="nav-item">
+			 
+			<li class="nav-item">
 			<v:if test="${session == true }"> <!-- if user is logged in display add new and logout  -->
-		    	<a class="nav-link js-scroll" href="./addSkill">Add Skills</a>
+		    	<a class="nav-link js-scroll" href="./showGoals">Show Goals</a>
 			</v:if>
 			</li>
+			
             
+          
           <li class="nav-item">
             <a class="nav-link js-scroll" href="contact.jsp">Contact</a>
           </li>
