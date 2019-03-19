@@ -17,6 +17,14 @@ import models.Skill;
 import models.SkillDAO;
 import models.StudentDAO;
 
+/**
+*
+*Gets the data from the jsp page and then sends it to the database.
+*
+* @author  Lewis, Callum, Josh, Alexander
+* @version 1.0
+* @since   19/3/2019
+*/
 public class ShowGoalServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1l;

@@ -19,6 +19,14 @@ import models.StudentDAO;
 import models.Goal;
 import models.GoalDAO;
 
+/**
+*
+*This allows you to add a goal
+*
+* @author  Lewis, Callum, Josh, Alexander
+* @version 1.0
+* @since   19/3/2019
+*/
 
 public class AddGoalServlet extends HttpServlet  {
 	
