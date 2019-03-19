@@ -37,10 +37,19 @@
   	
   }
   
+  .tarea {
+  	font-size: 12px;
+  	position: relative;
+  	top: 30px;
+  }
+  
+  
   </style>
 	
 </head>
 <body>
+<div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg); background-repeat: no-repeat;
+  background-attachment: fixed; height:2000px;">
 <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
@@ -103,11 +112,11 @@
 
 
 <div class="box2">
-<h1>ADD Goals</h1>
+<center><h1>ADD Goals</h1>
 
 
               
-              <form method = "post"  action="./addGoal">
+    <form method = "post"  action="./addGoal">
 	Select Month
 	<select name="selectMonth">
 	 <option value="jan">January</option>
@@ -122,17 +131,19 @@
 	<option value="oct">October</option>
 	<option value="nov">November</option>
 	<option value="dec">December</option>
+	</select>
 	
-	Goal <input type="text" name="GoalDescription">
+	Goal  <textarea name="GoalDescription" cols="30" rows="3" class="tarea" style="position: relative;"></textarea>
+	<!--  <input type="text" name="GoalDescription">-->
 		
 		<input type="submit" value="Submit">
 		
 		<!-- form for add -->
-		
+	
 	</form>
-              
+       </center>       
 </div>
-
+</div>
 
 	
 

@@ -244,11 +244,16 @@ color: black;
 <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg); background-repeat: no-repeat;
   background-attachment: fixed; height:2000px;" >
 <div class="timeline">
+<a href="./addGoal"><button>Add Goals</button></a>
   <div class="container left">
     <div class="content">
       <h2>January Goals</h2>
       
      <p name="jan"> <%=request.getAttribute("jan")%></p>
+     
+  
+ 
+     
     </div>
   </div>
   <div class="container right">
