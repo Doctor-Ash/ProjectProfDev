@@ -51,7 +51,7 @@ public class GraphTest extends HttpServlet {
 		}
 		
 		req.setAttribute("ratings", ratings);
-		session.setAttribute("skillName", skillName);
+		req.setAttribute("skillName", skillName);
 		
 		
 		RequestDispatcher view = req.getRequestDispatcher("Graphs test.jsp");

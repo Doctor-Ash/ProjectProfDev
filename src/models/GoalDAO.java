@@ -83,7 +83,7 @@ public class GoalDAO {
 		}
 		return skills;
 	}
-	 public ArrayList<Skill> getSkill(String username,String skillPass) throws SQLException  
+	/* public ArrayList<Skill> getSkill(String username,String skillPass) throws SQLException  
 	{
 		Connection dbConnection = null;
 		Statement statement = null;
@@ -133,7 +133,7 @@ public class GoalDAO {
 			}
 		}
 		return ratings;
-	}
+	}*/
 	
 	
 	

@@ -53,7 +53,6 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	},
 	data: [{
 		type: "line",
-		yValueFormatString: "#,##0mn tonnes",
 		dataPoints : <%out.print(dataPoints);%>
 	}]
 });
