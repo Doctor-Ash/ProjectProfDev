@@ -2,6 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Professional Development Planner</title>
 	
@@ -22,6 +23,7 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 <meta charset="ISO-8859-1">
+
 <title>Insert title here</title>
 </head>
 <style>
