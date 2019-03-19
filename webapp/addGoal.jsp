@@ -101,35 +101,37 @@
 
 
 <div class="box2">
-<h1>Insert Skill</h1>
+<h1>ADD Goals</h1>
 
 
               
               <form method = "post"  action="./addGoal">
 	
-	January Goals :<input type="text" name="janGoals">
+	January Goals <input type="text" name="janGoals">
 	<br>
-	February Goals :<input type="text" name="febGoals">
+	February Goals <input type="text" name="febGoals">
 	<br>
-	March Goals :<input type="text" name="marGoals">
+	March Goals <input type="text" name="marGoals">
 	<br>
-	April Goals :<input type="text" name="aprGoals">
+	April Goals <input type="text" name="aprGoals">
 	<br>
-	March Goals :<input type="text" name="marGoals">
+	March Goals <input type="text" name="marGoals">
 	<br>
-	May Goals :<input type="text" name="mayGoals">
+	May Goals <input type="text" name="mayGoals">
 	<br>
-	June Goals :<input type="text" name="junGoals">
+	June Goals <input type="text" name="junGoals">
 	<br>
-	July Goals :<input type="text" name="julGoals">
+	July Goals <input type="text" name="julGoals">
 	<br>
-	August Goals :<input type="text" name="augGoals">
+	August Goals <input type="text" name="augGoals">
 	<br>
-	September Goals :<input type="text" name="sepGoals">
+	September Goals <input type="text" name="sepGoals">
 	<br>
-	October Goals :<input type="text" name="junGoals">
+	October Goals <input type="text" name="octGoals">
 	<br>
-	July Goals :<input type="text" name="julGoals">
+	November Goals <input type="text" name="novGoals">
+	<br>
+	December Goals <input type="text" name="decGoals">
 	
 		
 		<input type="submit" value="Submit">
