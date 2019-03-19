@@ -137,7 +137,7 @@
 		
 		
 		</table>
-            <p class="subtitle-a">
+            <p class="subtitle-a" style="color: white;">
               List of your Units
             </p>
             <div class="">
@@ -157,7 +157,7 @@
               <h2 class="s-title">${v.getUnit_name() }</h2>
               <h3 class = "s-title">Grade = ${v.getGrade()} </h3>
               <p class = "s-title">
-	              <a href="#">
+	              <a href="./deleteUnit?unitName=${v.getUnit_name()}">
 	              	<button>DELETE</button>
 	              </a>
               </p>

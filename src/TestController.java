@@ -83,7 +83,7 @@ public class TestController {
 		
 		//########################UNIT DELETE TEST###################### PASSED 18/03 LF
 		/*try {
-			unitDAO.deleteUnit(1);
+			unitDAO.deleteUnit("1", "LewisFrater");
 		} catch(SQLException e) {
 			e.printStackTrace();
 		}*/
