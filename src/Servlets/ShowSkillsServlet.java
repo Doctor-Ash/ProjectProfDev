@@ -47,12 +47,16 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 		
 		req.setAttribute("skills", skills);
 		
-		
-		for(int i = 1; i <= 5; i++) {
-			last5skills.add(skills.get(skills.size()-i));
+		if(skills.size() > 0) {
+			for(int i = 1; i <= 5; i++) {
+				last5skills.add(skills.get(skills.size()-i));
+			}
+			req.setAttribute("last5skills", last5skills);
 		}
+		
 	
-		req.setAttribute("last5skills", last5skills);
+		
+		
 		
 		
 		RequestDispatcher view = req.getRequestDispatcher("showskills.jsp");

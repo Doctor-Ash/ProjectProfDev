@@ -125,17 +125,18 @@
 				
 				
 			</tr>
-			<v:forEach items="${last5skills}" var="v">
-				<tr>
-					<td>${v.getSkill_name() }</td>
-					<td>${v.getRating() }</td>
-					<td>${v.getDate() }</td>
-					<v:if test="${sesh == true }">
-						<td><button>Delete</button></td>
-					</v:if>
-				</tr>
-			</v:forEach>
-		
+			<v:if test="${last5skills.size() > 0 }">
+				<v:forEach items="${last5skills}" var="v">
+					<tr>
+						<td>${v.getSkill_name() }</td>
+						<td>${v.getRating() }</td>
+						<td>${v.getDate() }</td>
+						<v:if test="${sesh == true }">
+							<td><button>Delete</button></td>
+						</v:if>
+					</tr>
+				</v:forEach>
+			</v:if>
 		
 		
 		</table>
