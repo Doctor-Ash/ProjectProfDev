@@ -15,6 +15,13 @@ import models.SkillDAO;
 import models.Student;
 import models.StudentDAO;
 
+/**
+* This is used to create a account it takes information from the jsp page (form) and passes it to the constructor to make new accounts.
+*
+* @author  Lewis, Callum, Josh, Alexander
+* @version 1.0
+* @since   19/3/2019
+*/
 
 public class CreateAccountServlet extends HttpServlet  {
 	

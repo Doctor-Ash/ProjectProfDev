@@ -1,11 +1,11 @@
 package Servlets;
 
 /**
-* servlet to load the home
+* servlet to load the Graphs 
 *
-* @author  Alexander Harrison 17080341
+* @author  Lewis, Callum, Josh, Alexander
 * @version 1.0
-* @since   11/1/2019
+* @since   19/3/2019
 */
 
 import java.io.IOException;

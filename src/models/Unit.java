@@ -1,5 +1,12 @@
 package models;
 
+/*units constructors
+*
+* @author  Lewis, Callum, Josh, Alexander
+* @version 1.0
+* @since   19/3/2019
+*/
+
 public class Unit {
 	private int unit_id;
 	private String unit_name;

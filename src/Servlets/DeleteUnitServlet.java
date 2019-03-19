@@ -13,6 +13,12 @@ import javax.servlet.http.HttpSession;
 import models.GoalDAO;
 import models.UnitDAO;
 
+/**
+*This JSP pages allows you to delete units and then it will redirect you back to the show units page.
+* @author  Lewis, Callum, Josh, Alexander
+* @version 1.0
+* @since   19/3/2019
+*/
 public class DeleteUnitServlet extends HttpServlet  {
 	
 	static final long serialVersionUID = 1L;
