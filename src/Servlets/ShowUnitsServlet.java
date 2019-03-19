@@ -17,13 +17,6 @@ import models.StudentDAO;
 import models.Unit;
 import models.UnitDAO;
 
-/**
-* This is to get all the units that have been inserted from the database and show them on a jsp page 
-*
-* @author  Lewis, Callum, Josh, Alexander
-* @version 1.0
-* @since   19/3/2019
-*/
 public class ShowUnitsServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1l;

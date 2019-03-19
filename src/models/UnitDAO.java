@@ -7,14 +7,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-/**
-* UNIT DAO for connecting to the Database and inserting/updating/deleting units.
-* Also used to get information from the database
-*
-* @author  Lewis, Callum, Josh, Alexander
-* @version 1.0
-* @since   19/3/2019
-*/
 public class UnitDAO {
 
 	private static Connection getDBConnection() 

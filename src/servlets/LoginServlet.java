@@ -1,10 +1,10 @@
 package Servlets;
 /**
-*This servlet takes the infromation from the jsp pages and checks it with the database if the check is successful then it will change the session to match that person and then it will pass you on to the show skills page 
+* Login servlet to let thte user log in
 *
-* @author  Lewis, Callum, Josh, Alexander
+* @author  Alexander Harrison 17080341
 * @version 1.0
-* @since   19/3/2019
+* @since   11/1/2019
 */
 //@SuppressWarnings("serial")
 import java.io.PrintWriter;

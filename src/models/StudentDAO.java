@@ -7,14 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-/**
-* Student DAO to interact with the database to insert/update/delete and be able to use login create account exct.
-* Also used to get information from the database
-*
-* @author  Lewis, Callum, Josh, Alexander
-* @version 1.0
-* @since   19/3/2019
-*/
 public class StudentDAO {
 
 	private static Connection getDBConnection() 

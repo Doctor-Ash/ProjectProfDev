@@ -2,13 +2,6 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.Configuration.ClassList;
 import org.eclipse.jetty.webapp.WebAppContext;
 
-/**
-* This is the main controller that creates the jetty web sever and sets up the servlets
-*
-* @author  Lewis, Callum, Josh, Alexander
-* @version 1.0
-* @since   19/3/2019
-*/
 
 public class Controller {
 

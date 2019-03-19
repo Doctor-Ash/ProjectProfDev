@@ -1,10 +1,10 @@
 package Servlets;
 /**
-*This is the logout servlet so when the user wants to logout it will clear the httpsession and redirect them back to home
+* Logout servlet for the web 
 *
-* @author  Lewis, Callum, Josh, Alexander
+* @author  Alexander Harrison 17080341
 * @version 1.0
-* @since   19/3/2019
+* @since   11/1/2019
 */
 //@SuppressWarnings("serial")
 import java.io.PrintWriter;

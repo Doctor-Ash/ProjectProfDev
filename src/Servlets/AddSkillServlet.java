@@ -17,14 +17,6 @@ import models.SkillDAO;
 import models.Student;
 import models.StudentDAO;
 
-/**
-* This servlet is used for adding your skills to the database this loads the jsp page and gets the information from it and passes it to the DAO
-*
-* @author  Lewis, Callum, Josh, Alexander
-* @version 1.0
-* @since   19/3/2019
-*/
-
 public class AddSkillServlet extends HttpServlet  {
 	
 	static final long serialVersionUID = 1L;

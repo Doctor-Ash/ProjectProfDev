@@ -8,14 +8,6 @@ import models.StudentDAO;
 import models.Unit;
 import models.UnitDAO;
 
-/**
-* This is the second controller that is just for testing purposes so we can test the DAO's once they are made.
-*
-* @author  Lewis, Callum, Josh, Alexander
-* @version 1.0
-* @since   19/3/2019
-*/
-
 public class TestController {
 
 	public static void main(String[] args) {

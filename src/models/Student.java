@@ -2,13 +2,6 @@ package models;
 
 import java.util.ArrayList;
 
-/**
-* Student Constructors to create Students for use in the DAO
-*
-* @author  Lewis, Callum, Josh, Alexander
-* @version 1.0
-* @since   19/3/2019
-*/
 public class Student {
 	
 	private int stu_id; 
