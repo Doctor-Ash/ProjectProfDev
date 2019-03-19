@@ -3,6 +3,13 @@ package models;
 import java.util.ArrayList;
 import java.util.Date;
 
+/**
+* This is the SKill constructor for maaking skills to use within the Program
+*
+* @author  Lewis, Callum, Josh, Alexander
+* @version 1.0
+* @since   19/3/2019
+*/
 public class Skill {
 	private int skill_id;
 	private String skill_name;

@@ -10,11 +10,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import models.GoalDAO;
 import models.Skill;
 import models.SkillDAO;
 import models.Student;
 import models.StudentDAO;
 
+/**
+* This is used to create a account it takes information from the jsp page (form) and passes it to the constructor to make new accounts.
+*
+* @author  Lewis, Callum, Josh, Alexander
+* @version 1.0
+* @since   19/3/2019
+*/
 
 public class CreateAccountServlet extends HttpServlet  {
 	
@@ -30,6 +38,7 @@ public class CreateAccountServlet extends HttpServlet  {
 	{
 			
 			StudentDAO dao = new StudentDAO();
+			GoalDAO goalsdao = new GoalDAO();
 			
 		
 		String firstName = (String) req.getParameter("firstName");
@@ -51,6 +60,7 @@ public class CreateAccountServlet extends HttpServlet  {
 			System.out.println(done);
 			System.out.println(s);
 			if(done) {
+				goalsdao.insertNew(username);
 				resp.sendRedirect("index.jsp");
 			}}
 			catch (SQLException e) {

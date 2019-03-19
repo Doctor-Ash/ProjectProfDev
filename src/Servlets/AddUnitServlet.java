@@ -15,6 +15,13 @@ import models.SkillDAO;
 import models.Unit;
 import models.UnitDAO;
 
+/**
+*This servlet is used for adding units to the DAO and loading the jsp page 
+*
+* @author  Lewis, Callum, Josh, Alexander
+* @version 1.0
+* @since   19/3/2019
+*/
 public class AddUnitServlet extends HttpServlet  {
 	
 	static final long serialVersionUID = 1L;
