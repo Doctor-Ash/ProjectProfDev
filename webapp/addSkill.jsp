@@ -31,9 +31,6 @@
   	clear: both;
   	position: relative;
   	top: 200px;
-  	background-color: black;
-  	filter: alpha(opacity=80);
-    opacity: 0.8;
   }
   
   nav {
@@ -62,7 +59,7 @@
   background-attachment: fixed; height:2000px;">
 
   <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" href="#page-top">ProfDev</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
@@ -128,9 +125,8 @@
 
               
               <form method = "post"  action="./addSkill">
-	
-	<h4>Communication Rating :</h4>     
-	<select name="selectCommunicationRating">
+
+	 <h4>Communication Rating : <select name="selectCommunicationRating">
 	 <option value="1">1</option>
 	 <option value="2">2</option>
 	<option value="3">3</option>
@@ -141,15 +137,15 @@
 	<option value="8">8</option>
 	<option value="9">9</option>
 	<option value="10">10</option>
-	</select>
+	</select></h4>   
 	
-		Progress notes: <textarea name="Communicationdescription" cols="30" rows="3" class="tarea"></textarea>
+	
+		<span style="font-size: 30px;">Progress notes: </span><textarea name="Communicationdescription" cols="30" rows="3" class="tarea"></textarea>
 		<!--  <input type="text" class="ibox" name="Communicationdescription">-->
-		
-	<br>
 	
-	<h4>Teamwork Rating :</h4>
-	<select name="selectTeamworkRating">
+	<br><br><br><br>
+	
+	<h4>Teamwork Rating : <select name="selectTeamworkRating">
 	 <option value="1">1</option>
 	 <option value="2">2</option>
 	<option value="3">3</option>
@@ -160,13 +156,13 @@
 	<option value="8">8</option>
 	<option value="9">9</option>
 	<option value="10">10</option>
-	</select>
-	Progress notes: <textarea name="Teamworkdescription" cols="30" rows="3" class="tarea"></textarea>
+	</select></h4>
+	
+	<span style="font-size: 30px;">Progress notes: </span><textarea name="Teamworkdescription" cols="30" rows="3" class="tarea"></textarea>
 	<!--  <input type="text" class="ibox"  name="Teamworkdescription">-->
-	<br>
+	<br><br><br><br>
 	
-	<h4>Organisation Rating :</h4>
-	<select name="selectOrganisationRating">
+	<h4>Organisation Rating : <select name="selectOrganisationRating">
 	 <option value="1">1</option>
 	 <option value="2">2</option>
 	<option value="3">3</option>
@@ -177,13 +173,13 @@
 	<option value="8">8</option>
 	<option value="9">9</option>
 	<option value="10">10</option>
-	</select>
-	Progress notes: <textarea name="selectOrganisationdescription" cols="30" rows="3" class="tarea"></textarea>
+	</select></h4>
+	
+	<span style="font-size: 30px;">Progress notes: </span><textarea name="selectOrganisationdescription" cols="30" rows="3" class="tarea"></textarea>
 	<!--  <input type="text" class="ibox" name="selectOrganisationdescription"> -->
-	<br>
+	<br><br><br><br>
 	
-	<h4>Time Management Rating :</h4>
-	<select name="selectTimemanagementRating">
+	<h4>Time Management Rating : <select name="selectTimemanagementRating">
 	 <option value="1">1</option>
 	 <option value="2">2</option>
 	<option value="3">3</option>
@@ -194,13 +190,13 @@
 	<option value="8">8</option>
 	<option value="9">9</option>
 	<option value="10">10</option>
-	</select>
-	Progress notes: <textarea name="Timemanagementdescription" cols="30" rows="3" class="tarea"></textarea>
+	</select></h4>
+	
+	<span style="font-size: 30px;">Progress notes: </span><textarea name="Timemanagementdescription" cols="30" rows="3" class="tarea"></textarea>
 	<!--  <input type="text" class="ibox" name="Timemanagementdescription">-->
-	<br>
+	<br><br><br><br>
 	
-	<h4>Personal Development Rating :</h4>
-	<select name="selectPersonaldevelopmentRating">
+	<h4>Personal Development Rating : <select name="selectPersonaldevelopmentRating">
 	 <option value="1">1</option>
 	 <option value="2">2</option>
 	<option value="3">3</option>
@@ -211,8 +207,9 @@
 	<option value="8">8</option>
 	<option value="9">9</option>
 	<option value="10">10</option>
-	</select>
-	Progress notes: <textarea name="PersonalDevelopmentdescription" cols="30" rows="3" class="tarea"></textarea> 
+	</select></h4>
+	
+	<span style="font-size: 30px;">Progress notes: </span><textarea name="PersonalDevelopmentdescription" cols="30" rows="3" class="tarea"></textarea> 
 	<!--  <input type="text" class="ibox" name="PersonalDevelopmentdescription">-->
 
 	<br>
@@ -245,15 +242,33 @@
 		-->
 		
 		<input type="submit" value="Submit">
-		</center>
+		
 		<!-- form for add -->
 		
 	</form>
-              
+    </center>         
 </div>
 
 </div>
-	
+	 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 
 
 </body>
