@@ -117,6 +117,8 @@
               Skills
             </h3>
             
+            
+            
             <table align="center" style="background-color: black; opacity: 0.75;">
 			<tr>
 				<th>Name</th>
