@@ -49,7 +49,7 @@
 </head>
 <body>
 <div class="intro route bg-image" style="background-image: url(img/intro-bg.jpg); background-repeat: no-repeat;
-  background-attachment: fixed; height:2000px;">
+  background-attachment: fixed; height:700px;">
 <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
