@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/site.css">
 	<title>Professional Development Planner</title>
 	
-	  <!-- Favicons -->
+	  <!-- Favicons comment -->
 	  <link href="img/favicon.png" rel="icon">
 	  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 	
