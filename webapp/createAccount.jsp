@@ -87,7 +87,7 @@
   <!--/ Nav End /-->
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
-		<div class="card">
+		<div class="card"  style=height:650px;>
 			<div class="card-header">
 				<h3>Create</h3>
 			
@@ -163,7 +163,7 @@
 						
 					</div>
 				</form>
-			</div>
+			
 			<div class="card-footer">
 				<div class="d-flex justify-content-center links">
 					Have a account?<a href="./login">Login</a>
